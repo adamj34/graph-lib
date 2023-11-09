@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o -c /home/addar/graph-lib/src/algorithms/minimal_spanning_tree/prim.cpp",
+  "file": "/home/addar/graph-lib/src/algorithms/minimal_spanning_tree/prim.cpp",
+  "output": "CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
+  "output": "CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o"
+}
+]

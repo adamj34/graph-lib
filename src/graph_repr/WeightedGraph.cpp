@@ -1,4 +1,4 @@
-#include "WeightedGraph.hpp"
+#include "graph_repr/WeightedGraph.hpp"
 
 #include <vector>
 #include <tuple>
@@ -6,6 +6,7 @@
 #include <iostream>
 
 namespace gralph {
+namespace graph {
 
 WeightedGraph::WeightedGraph(int V_num, int E_num) 
     : m_V_num(V_num)
@@ -46,19 +47,20 @@ void WeightedGraph::delete_vertex(int node) {
 }
 
 void WeightedGraph::print_matrix() {
-    cout << 'X' << " ";
+    std::cout << 'X' << " ";
     for (const auto& [k, v] : m_graph_matrix) {
-        cout << k << " ";
+        std::cout << k << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
     for (const auto& [k, v] : m_graph_matrix) {
-        cout << k << " ";
+        std::cout << k << " ";
         for (int j = 0; j < m_V_num; ++j) {
-            cout << m_graph_matrix[k][j] << " ";
+            std::cout << m_graph_matrix[k][j] << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
-    cout << endl;
+    std::cout << std::endl;
 }
 
+}
 }

@@ -1,11 +1,12 @@
-#ifndef WEIGHTED_GRAPH_HPP
-#define WEIGHTED_GRAPH_HPP
+#ifndef GRAPH_REPR_WEIGHTEDGRAPH_HPP_
+#define GRAPH_REPR_WEIGHTEDGRAPH_HPP_
 
 #include <vector>
 #include <tuple>
 #include <map>
 
 namespace gralph {
+namespace graph {
 
 class WeightedGraph {
     private:
@@ -32,4 +33,6 @@ class WeightedGraph {
 };
 
 }
-#endif
+}
+
+#endif // GRAPH_REPR_WEIGHTEDGRAPH_HPP_"

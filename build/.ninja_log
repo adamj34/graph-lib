@@ -1,3 +1,15 @@
 # ninja log v5
 0	830	1699473762662622754	CMakeFiles/graph-lib.dir/graph-lib.cpp.o	b2f7f8a0268437d6
 830	887	1699473762722622761	libgraph-lib.a	eba6f36f024482b9
+0	815	1699567724317014241	CMakeFiles/Graphs.dir/graph-lib.cpp.o	eb4dddcb449cae0
+498	516	1699567227627016334	libgralph.a	8e03aca1d86e637a
+1	859	1699566263257010036	CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o	996742c665537e7f
+0	498	1699567227617016340	CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o	635e547dfab193dc
+815	1279	1699567724777014248	Graphs	b20ac94e6f4dc225
+0	1605	1699643957305018618	CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o	996742c665537e7f
+0	1616	1699643957315851951	CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o	635e547dfab193dc
+1	362	1699643975905852209	libgralph.a	8e03aca1d86e637a
+1	666	1699643976220018881	CMakeFiles/Graphs.dir/graph-lib.cpp.o	eb4dddcb449cae0
+666	1082	1699643976620852221	Graphs	b20ac94e6f4dc225
+0	616	1699644004159186009	CMakeFiles/Graphs.dir/graph-lib.cpp.o	eb4dddcb449cae0
+616	839	1699644004375852679	Graphs	b20ac94e6f4dc225

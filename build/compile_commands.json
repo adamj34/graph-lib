@@ -10,5 +10,11 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
   "file": "/home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
   "output": "CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o CMakeFiles/Graphs.dir/graph-lib.cpp.o -c /home/addar/graph-lib/graph-lib.cpp",
+  "file": "/home/addar/graph-lib/graph-lib.cpp",
+  "output": "CMakeFiles/Graphs.dir/graph-lib.cpp.o"
 }
 ]

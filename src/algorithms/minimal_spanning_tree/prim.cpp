@@ -1,5 +1,5 @@
-#include "WeightedGraph.hpp"
-#include "prim.hpp"
+#include "graph_repr/WeightedGraph.hpp"
+#include "algorithms/minimal_spanning_trees/prim.hpp"
 
 #include <unordered_set>
 #include <map>
@@ -9,17 +9,15 @@
 
 
 namespace gralph {
+namespace algos {
 
-std::pair<std::map<int, std::vector<int>>, int> prim(const WeightedGraph& graph) {
-    int cost {};
-    std::unordered_set<int> added {};
-    std::map<int, std::vector<int>> mst {};
-    std::map<int, std::vector<int>> graph_repr = { graph.get_graph() };
+prim::prim(const gralph::graph::WeightedGraph& graph) {
     int V_num { graph.get_verex_num() };
     for (int i = 0; i < V_num; ++i) {
         mst[i] = std::vector<int>();
     }
 
+    std::map<int, std::vector<int>> graph_repr = { graph.get_graph() };
     added.insert(0);
     while (ssize(added) < V_num) {
         int min_val = std::numeric_limits<int>::max();
@@ -36,11 +34,13 @@ std::pair<std::map<int, std::vector<int>>, int> prim(const WeightedGraph& graph)
                 }
             }
         }
+
         mst[vertex_from].push_back(vertex_to);
         added.insert(vertex_to);
         cost += min_val;
     }
-    return {mst, cost};
 }
 
-}
+} // namespace algos
+}  // namespace gralph
+

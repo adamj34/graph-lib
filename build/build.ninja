@@ -40,6 +40,78 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/addar/graph-lib/build/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gralph
+
+
+#############################################
+# Order-only phony target for gralph
+
+build cmake_object_order_depends_target_gralph: phony || CMakeFiles/gralph.dir
+
+build CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/algorithms/minimal_spanning_tree/prim.cpp || cmake_object_order_depends_target_gralph
+  DEP_FILE = CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = CMakeFiles/gralph.dir
+  OBJECT_FILE_DIR = CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree
+
+build CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp || cmake_object_order_depends_target_gralph
+  DEP_FILE = CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = CMakeFiles/gralph.dir
+  OBJECT_FILE_DIR = CMakeFiles/gralph.dir/src/graph_repr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gralph
+
+
+#############################################
+# Link the static library libgralph.a
+
+build libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/gralph.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libgralph.a
+  TARGET_PDB = gralph.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Graphs
+
+
+#############################################
+# Order-only phony target for Graphs
+
+build cmake_object_order_depends_target_Graphs: phony || cmake_object_order_depends_target_gralph
+
+build CMakeFiles/Graphs.dir/graph-lib.cpp.o: CXX_COMPILER__Graphs_unscanned_Debug /home/addar/graph-lib/graph-lib.cpp || cmake_object_order_depends_target_Graphs
+  DEP_FILE = CMakeFiles/Graphs.dir/graph-lib.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = CMakeFiles/Graphs.dir
+  OBJECT_FILE_DIR = CMakeFiles/Graphs.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Graphs
+
+
+#############################################
+# Link the executable Graphs
+
+build Graphs: CXX_EXECUTABLE_LINKER__Graphs_Debug CMakeFiles/Graphs.dir/graph-lib.cpp.o | libgralph.a || libgralph.a
+  FLAGS = -g
+  LINK_LIBRARIES = libgralph.a
+  OBJECT_DIR = CMakeFiles/Graphs.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Graphs
+  TARGET_PDB = Graphs.dbg
+
 
 #############################################
 # Utility command for Experimental
@@ -207,45 +279,6 @@ build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
 # Utility command for ContinuousSubmit
 
 build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gralph
-
-
-#############################################
-# Order-only phony target for gralph
-
-build cmake_object_order_depends_target_gralph: phony || CMakeFiles/gralph.dir
-
-build CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/algorithms/minimal_spanning_tree/prim.cpp || cmake_object_order_depends_target_gralph
-  DEP_FILE = CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I/home/addar/graph-lib/include
-  OBJECT_DIR = CMakeFiles/gralph.dir
-  OBJECT_FILE_DIR = CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree
-
-build CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp || cmake_object_order_depends_target_gralph
-  DEP_FILE = CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I/home/addar/graph-lib/include
-  OBJECT_DIR = CMakeFiles/gralph.dir
-  OBJECT_FILE_DIR = CMakeFiles/gralph.dir/src/graph_repr
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gralph
-
-
-#############################################
-# Link the static library libgralph.a
-
-build libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug CMakeFiles/gralph.dir/src/algorithms/minimal_spanning_tree/prim.cpp.o CMakeFiles/gralph.dir/src/graph_repr/WeightedGraph.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/gralph.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = libgralph.a
-  TARGET_PDB = gralph.a.dbg
 
 
 #############################################
@@ -543,7 +576,7 @@ build gralph: phony libgralph.a
 #############################################
 # Folder: /home/addar/graph-lib/build
 
-build all: phony libgralph.a
+build all: phony libgralph.a Graphs
 
 # =============================================================================
 # Built-in targets

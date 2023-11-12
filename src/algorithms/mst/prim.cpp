@@ -17,7 +17,7 @@ prim::prim(const gralph::graph::WeightedGraph& graph) {
         mst[i] = std::vector<int>();
     }
 
-    std::map<int, std::vector<int>> graph_repr = { graph.get_graph() };
+    const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();
     added.insert(0);
     while (ssize(added) < V_num) {
         int min_val = std::numeric_limits<int>::max();
@@ -25,7 +25,7 @@ prim::prim(const gralph::graph::WeightedGraph& graph) {
         for (int vertex : added) {
             for (int candidate = 0; candidate < V_num; ++candidate) {
                 if (!added.contains(candidate)) {
-                    int weight = { graph_repr[vertex][candidate] };
+                    int weight = { graph_repr.at(vertex)[candidate] };
                     if (0 < weight && weight <= min_val) {
                         min_val = { weight };
                         vertex_from = { vertex };

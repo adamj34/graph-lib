@@ -1,5 +1,5 @@
-#ifndef ALGORITHMS_MINIMAL_SPANNING_TREES_PRIM_HPP_
-#define ALGORITHMS_MINIMAL_SPANNING_TREES_PRIM_HPP_
+#ifndef ALGORITHMS_MST_PRIM_HPP_
+#define ALGORITHMS_MST_PRIM_HPP_
 
 #include <utility>
 #include <unordered_set>
@@ -28,4 +28,4 @@ class prim {
 }
 }
 
-#endif  // ALGORITHMS_MINIMAL_SPANNING_TREES_PRIM_HPP_
+#endif  // ALGORITHMS_MST_PRIM_HPP_

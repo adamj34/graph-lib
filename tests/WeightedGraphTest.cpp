@@ -73,7 +73,7 @@ TEST_CASE( "WeightedGraph can get vertex degree", "[WeightedGraphTest]" ) {
         {2, 3, 5},
     };
     graph.build_edges(coords_tuples);
-    graph.print_matrix();
+    
     SECTION("Vertex degree is calculated correctly for a node with edges") {
         REQUIRE(graph.get_vertex_deg(0) == 2);
         REQUIRE(graph.get_vertex_deg(1) == 2);

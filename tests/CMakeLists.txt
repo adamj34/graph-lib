@@ -10,6 +10,7 @@ FetchContent_MakeAvailable(catch2)
 add_executable(gralphTests
     WeightedGraphTest.cpp
     primTest.cpp
+    dijkstraTest.cpp
 )
 
 target_link_libraries(gralphTests

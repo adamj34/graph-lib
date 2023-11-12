@@ -29,13 +29,17 @@ void WeightedGraph::add_vertex() {
     for (auto& [k, v] : m_graph_matrix) {
         v.push_back(0);
     }
-    m_graph_matrix[m_V_num] = std::vector<int>(m_V_num, 0);
+    m_graph_matrix[m_V_num - 1] = std::vector<int>(m_V_num, 0);
+}
+
+int WeightedGraph::get_vertex_deg(int node) {
+    return std::count_if(m_graph_matrix[node].begin(),
+                         m_graph_matrix[node].end(),
+                         [](int i) { return i != 0; });
 }
 
 void WeightedGraph::delete_vertex(int node) {
-    int edge_cnt = std::count_if(m_graph_matrix[node].begin(),
-                            m_graph_matrix[node].end(),
-                            [](int i) { return i != 0; });
+    int edge_cnt = get_vertex_deg(node);
     m_E_num = m_E_num - edge_cnt;
     m_graph_matrix.erase(node);
 
@@ -62,5 +66,7 @@ void WeightedGraph::print_matrix() {
     std::cout << std::endl;
 }
 
-}
-}
+} // namespace graph
+} // namespace gralph
+
+

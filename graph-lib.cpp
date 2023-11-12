@@ -1,6 +1,6 @@
 
-#include "include/algorithms/minimal_spanning_trees/prim.hpp"
-#include "include/graph_repr/WeightedGraph.hpp"
+#include "algorithms/mst/prim.hpp"
+#include "graph_repr/WeightedGraph.hpp"
 #include <iostream>
 using namespace std;
 

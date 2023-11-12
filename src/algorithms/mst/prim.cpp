@@ -1,5 +1,5 @@
+#include "algorithms/mst/prim.hpp"
 #include "graph_repr/WeightedGraph.hpp"
-#include "algorithms/minimal_spanning_trees/prim.hpp"
 
 #include <unordered_set>
 #include <map>
@@ -12,7 +12,7 @@ namespace gralph {
 namespace algos {
 
 prim::prim(const gralph::graph::WeightedGraph& graph) {
-    int V_num { graph.get_verex_num() };
+    int V_num { graph.get_vertex_num() };
     for (int i = 0; i < V_num; ++i) {
         mst[i] = std::vector<int>();
     }
@@ -33,6 +33,14 @@ prim::prim(const gralph::graph::WeightedGraph& graph) {
                     }
                 }
             }
+        }
+
+        if (vertex_from == -1 && vertex_to == -1) {  // no mst in the graph
+            cost = 0;
+            for (auto& [key, value] : mst) {
+                value.clear();
+            }
+            return;
         }
 
         mst[vertex_from].push_back(vertex_to);

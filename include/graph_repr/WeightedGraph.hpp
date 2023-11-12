@@ -21,13 +21,15 @@ class WeightedGraph {
 
         int get_edge_num() const { return m_E_num; }
 
-        int get_verex_num() const { return m_V_num; }
+        int get_vertex_num() const { return m_V_num; }
 
         void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples);
 
         void add_vertex();
 
         void delete_vertex(int node);
+
+        int get_vertex_deg(int node);
 
         void print_matrix();
 };

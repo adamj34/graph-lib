@@ -9,12 +9,15 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "-Wall",
-                "${fileDirname}/src/grap_repr/**.cpp",
-                "${fileDirname}/src/algorithms/mst**.cpp",
-                "${fileDirname}/src/algorithms/shortest_path/**.cpp",
+                "-I${workspaceFolder}/include",
+                // "${fileDirname}/src/grap_repr/**.cpp",
+                // "${fileDirname}/src/algorithms/mst**.cpp",
+                // "${fileDirname}/src/algorithms/shortest_path/**.cpp",
                 "${fileDirname}/graph-lib.cpp",
                 "-o",
-                "${workspaceFolder}/output"
+                "${workspaceFolder}/output",
+                "-L", "build/src", 
+                "-lgralph"
             ],
             "options": {
                 "cwd": "${fileDirname}"

@@ -11,6 +11,7 @@ add_executable(gralphTests
     WeightedGraphTest.cpp
     primTest.cpp
     dijkstraTest.cpp
+    dfsTest.cpp
 )
 
 target_link_libraries(gralphTests

@@ -55,15 +55,15 @@ void WeightedGraph::print_matrix() {
     for (const auto& [k, v] : m_graph_matrix) {
         std::cout << k << " ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
     for (const auto& [k, v] : m_graph_matrix) {
         std::cout << k << " ";
         for (int j = 0; j < m_V_num; ++j) {
             std::cout << m_graph_matrix[k][j] << " ";
         }
-        std::cout << std::endl;
+        std::cout << '\n';
     }
-    std::cout << std::endl;
+    std::cout << '\n';
 }
 
 } // namespace graph

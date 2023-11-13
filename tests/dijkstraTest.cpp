@@ -56,7 +56,7 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path (G4G)", "[Dijks
     }
 }
 
-TEST_CASE( "Dijkstra's algorithm finds the correct shortest path (prims' graph)", "[DijkstraTest]" ) {
+TEST_CASE( "Dijkstra's algorithm finds the correct shortest path", "[DijkstraTest]" ) {
     gralph::graph::WeightedGraph graph{5, 6};
     std::vector<std::tuple<int, int, int>> coords_tuples = {
         {0, 1, 2},

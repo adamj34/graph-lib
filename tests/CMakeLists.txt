@@ -12,6 +12,8 @@ add_executable(gralphTests
     primTest.cpp
     dijkstraTest.cpp
     dfsTest.cpp
+    fleuryCycleTest.cpp
+    fleuryPathTest.cpp
 )
 
 target_link_libraries(gralphTests

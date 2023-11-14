@@ -16,6 +16,7 @@ class dfs {
         std::unordered_set<int> m_visited {};
         std::stack<int> m_stack {};
         std::unordered_map<int, int> m_parent {};
+        int m_vertices_num {};
         bool m_cycle { false };
 
     public:
@@ -24,6 +25,8 @@ class dfs {
         const std::unordered_set<int>& get_visited() const { return m_visited; };
 
         bool contains_cycle() { return m_cycle; };
+
+        bool is_disconnected() { return ssize(m_visited) != m_vertices_num; };
 };
 
 }  // namespace search

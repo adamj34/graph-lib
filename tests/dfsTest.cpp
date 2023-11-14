@@ -158,3 +158,37 @@ TEST_CASE( "DFS handles disconnected graphs", "[dfs]" ) {
     }
 
 }
+
+TEST_CASE("DFS correctly identifies a disconnected graph", "[dfs]") {
+    gralph::graph::WeightedGraph graph{5, 2};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 2},
+        {2, 3, 3},
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::search::dfs dfs_algo{graph, 0};
+    bool is_disconnected = dfs_algo.is_disconnected();
+
+    SECTION("DFS correctly identifies a disconnected graph") {
+        REQUIRE(is_disconnected == true);
+    }
+}
+
+TEST_CASE("DFS correctly identifies a connected graph", "[dfs]") {
+    gralph::graph::WeightedGraph graph{5, 4};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 2},
+        {1, 2, 3},
+        {2, 3, 4},
+        {3, 4, 5},
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::search::dfs dfs_algo{graph, 0};
+    bool is_disconnected = dfs_algo.is_disconnected();
+
+    SECTION("DFS correctly identifies a connected graph") {
+        REQUIRE(is_disconnected == false);
+    }
+}

@@ -31,6 +31,12 @@ class WeightedGraph {
 
         int get_vertex_deg(int node);
 
+        void add_edge(const std::tuple<int, int, int>& edge);
+
+        void delete_edge(const std::pair<int, int>& edge);
+
+        int get_edge_weight(const std::pair<int, int>& edge);
+
         void print_matrix();
 };
 

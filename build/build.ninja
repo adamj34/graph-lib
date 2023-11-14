@@ -566,6 +566,20 @@ build src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o: CXX_COMPILER__gralp
   OBJECT_DIR = src/CMakeFiles/gralph.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gralph.dir/algorithms/search
 
+build src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp || cmake_object_order_depends_target_gralph
+  DEP_FILE = src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = src/CMakeFiles/gralph.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gralph.dir/algorithms/euler
+
+build src/CMakeFiles/gralph.dir/algorithms/euler/fleuryPath.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/algorithms/euler/fleuryPath.cpp || cmake_object_order_depends_target_gralph
+  DEP_FILE = src/CMakeFiles/gralph.dir/algorithms/euler/fleuryPath.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = src/CMakeFiles/gralph.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gralph.dir/algorithms/euler
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target gralph
@@ -574,7 +588,7 @@ build src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o: CXX_COMPILER__gralp
 #############################################
 # Link the static library src/libgralph.a
 
-build src/libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o
+build src/libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryPath.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/CMakeFiles/gralph.dir
   POST_BUILD = :
@@ -683,6 +697,20 @@ build tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o: CXX_COMPILER__gralphTests_
   OBJECT_DIR = tests/CMakeFiles/gralphTests.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/gralphTests.dir
 
+build tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o: CXX_COMPILER__gralphTests_unscanned_Debug /home/addar/graph-lib/tests/fleuryCycleTest.cpp || cmake_object_order_depends_target_gralphTests
+  DEP_FILE = tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include
+  OBJECT_DIR = tests/CMakeFiles/gralphTests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/gralphTests.dir
+
+build tests/CMakeFiles/gralphTests.dir/fleuryPathTest.cpp.o: CXX_COMPILER__gralphTests_unscanned_Debug /home/addar/graph-lib/tests/fleuryPathTest.cpp || cmake_object_order_depends_target_gralphTests
+  DEP_FILE = tests/CMakeFiles/gralphTests.dir/fleuryPathTest.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include
+  OBJECT_DIR = tests/CMakeFiles/gralphTests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/gralphTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target gralphTests
@@ -691,7 +719,7 @@ build tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o: CXX_COMPILER__gralphTests_
 #############################################
 # Link the executable tests/gralphTests
 
-build tests/gralphTests: CXX_EXECUTABLE_LINKER__gralphTests_Debug tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o tests/CMakeFiles/gralphTests.dir/primTest.cpp.o tests/CMakeFiles/gralphTests.dir/dijkstraTest.cpp.o tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o | _deps/catch2-build/src/libCatch2Maind.a src/libgralph.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a src/libgralph.a
+build tests/gralphTests: CXX_EXECUTABLE_LINKER__gralphTests_Debug tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o tests/CMakeFiles/gralphTests.dir/primTest.cpp.o tests/CMakeFiles/gralphTests.dir/dijkstraTest.cpp.o tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o tests/CMakeFiles/gralphTests.dir/fleuryPathTest.cpp.o | _deps/catch2-build/src/libCatch2Maind.a src/libgralph.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a src/libgralph.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/catch2-build/src/libCatch2Maind.a  src/libgralph.a  _deps/catch2-build/src/libCatch2d.a
   OBJECT_DIR = tests/CMakeFiles/gralphTests.dir

@@ -31,6 +31,18 @@
 },
 {
   "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o -c /home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
+  "file": "/home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryPath.cpp.o -c /home/addar/graph-lib/src/algorithms/euler/fleuryPath.cpp",
+  "file": "/home/addar/graph-lib/src/algorithms/euler/fleuryPath.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/euler/fleuryPath.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o -c /home/addar/graph-lib/tests/WeightedGraphTest.cpp",
   "file": "/home/addar/graph-lib/tests/WeightedGraphTest.cpp",
   "output": "tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o"
@@ -52,6 +64,18 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o -c /home/addar/graph-lib/tests/dfsTest.cpp",
   "file": "/home/addar/graph-lib/tests/dfsTest.cpp",
   "output": "tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o -c /home/addar/graph-lib/tests/fleuryCycleTest.cpp",
+  "file": "/home/addar/graph-lib/tests/fleuryCycleTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/fleuryPathTest.cpp.o -c /home/addar/graph-lib/tests/fleuryPathTest.cpp",
+  "file": "/home/addar/graph-lib/tests/fleuryPathTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/fleuryPathTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",

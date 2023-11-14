@@ -5,8 +5,9 @@
 namespace gralph {
 namespace search {
 
-gralph::search::dfs::dfs(const graph::WeightedGraph &graph, int source)
+gralph::search::dfs::dfs(const gralph::graph::WeightedGraph &graph, int source)
     : m_source(source)
+    , m_vertices_num(graph.get_vertex_num())
     {
         const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();
         m_stack.push(m_source);

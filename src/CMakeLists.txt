@@ -5,6 +5,5 @@ add_library(gralph
             algorithms/shortest_path/dijkstra.cpp
             algorithms/search/dfs.cpp
             # algorithms/search/bfs.cpp
-            algorithms/euler/fleuryCycle.cpp
-            algorithms/euler/fleuryPath.cpp)
+            algorithms/euler/fleuryCycle.cpp)
 

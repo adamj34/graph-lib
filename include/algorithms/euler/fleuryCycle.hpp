@@ -18,7 +18,11 @@ class fleuryCycle {
 
         bool check_euler_cycle(); 
 
+        bool check_euler_path();
+
         int find_starting_point();
+
+        int choose_starting_point();
     public:
         fleuryCycle(const gralph::graph::WeightedGraph& graph, int source);
 

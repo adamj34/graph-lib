@@ -10,10 +10,11 @@ gralph::euler::fleuryCycle::fleuryCycle(const gralph::graph::WeightedGraph& grap
     : m_source(source)
     , m_graph(graph)
     , m_is_eulerian(check_euler_cycle())
+    , m_is_semi_eulerian(m_is_eulerian || check_euler_path())
     {
-        if (!is_eulerian()) { return; };
-
-        int curr_node = m_source;
+        // choose the staring point depending on the type of the graph
+        int curr_node = choose_starting_point();
+        if (curr_node == -1) { return; }
         while (m_graph.get_edge_num() > 0) {
 
             bool valid_edge_found { false };
@@ -53,6 +54,37 @@ bool gralph::euler::fleuryCycle::check_euler_cycle() {
         }
     }
     return true;
+}
+
+bool gralph::euler::fleuryCycle::check_euler_path() {
+    int odd_deg_vertices { 0 };
+    for (auto &[vertex, neighbours] : m_graph.get_graph()) {
+        if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
+            ++odd_deg_vertices;
+        }
+    }
+    return (odd_deg_vertices == 2) || (odd_deg_vertices == 0);
+}
+
+int gralph::euler::fleuryCycle::find_starting_point() {
+    for (auto &[vertex, neighbours] : m_graph.get_graph()) {
+        if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
+                return vertex;
+            }
+        }
+    return 0;
+}
+
+int gralph::euler::fleuryCycle::choose_starting_point() {
+    int start_node {};
+    if (!m_is_eulerian && !m_is_semi_eulerian) {
+        return -1;
+    } else if (m_is_eulerian) {
+        start_node = { m_source };
+    } else if (m_is_semi_eulerian) {
+        start_node = { find_starting_point() };
+    }
+    return start_node;
 }
 
 }  // namespace euler

@@ -13,16 +13,19 @@ namespace algos {
 
 class prim {
     private:
-        std::map<int, std::vector<int>> mst {};
-        int cost { 0 };
-        std::unordered_set<int> added {};
+        const gralph::graph::WeightedGraph& m_graph;
+        std::map<int, std::vector<int>> m_mst {};
+        int m_cost { 0 };
+        std::unordered_set<int> m_added {};
 
     public:
         explicit prim(const gralph::graph::WeightedGraph& graph);
 
-        const std::map<int, std::vector<int>>& get_mst() const { return mst; }
+        void solve(int source = 0);
 
-        int get_cost() const { return cost; }
+        const std::map<int, std::vector<int>>& get_mst() const { return m_mst; };
+
+        int get_cost() const { return m_cost; };
 };
 
 }

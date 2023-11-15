@@ -12,21 +12,22 @@ namespace search {
 
 class dfs {
     private:
-        int m_source { 0 };
+        const gralph::graph::WeightedGraph& m_graph;
         std::unordered_set<int> m_visited {};
         std::stack<int> m_stack {};
         std::unordered_map<int, int> m_parent {};
-        int m_vertices_num {};
         bool m_cycle { false };
 
     public:
-        dfs(const gralph::graph::WeightedGraph& graph, int source);
+        explicit dfs(const gralph::graph::WeightedGraph& graph);
+
+        void solve(int source);
 
         const std::unordered_set<int>& get_visited() const { return m_visited; };
 
         bool contains_cycle() { return m_cycle; };
 
-        bool is_disconnected() { return ssize(m_visited) != m_vertices_num; };
+        bool is_disconnected() { return ssize(m_visited) != m_graph.get_vertex_num(); };
 };
 
 }  // namespace search

@@ -11,13 +11,14 @@ namespace search {
 
 class bfs {
     private:
-        int m_source { 0 };
-        int m_vertices_num { 0 };
+        const gralph::graph::WeightedGraph& m_graph;
         std::unordered_set<int> m_visited {};
         std::queue<int> m_queue {};
 
     public:
-        bfs(const gralph::graph::WeightedGraph& graph, int source);
+        explicit bfs(const gralph::graph::WeightedGraph& graph);
+
+        void solve(int source = 0);
 
         const std::unordered_set<int>& get_visited() const { return m_visited; };
 };

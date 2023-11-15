@@ -37,8 +37,9 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path (G4G)", "[Dijks
 
     graph.build_edges(coords_tuples);
 
-    gralph::algos::Dijkstra dijkstra{graph, 0};
-    std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_paths();
+    gralph::algos::dijkstra dijkstra{graph};
+    dijkstra.solve(0);
+    std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_path_costs();
 
     SECTION("Shortest path to each vertex is correct") {
         std::unordered_map<int, int> expected_shortest_paths = {
@@ -68,8 +69,9 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path", "[DijkstraTes
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::Dijkstra dijkstra{graph, 0};
-    std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_paths();
+    gralph::algos::dijkstra dijkstra{graph};
+    dijkstra.solve(0);
+    std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_path_costs();
 
     SECTION("Shortest path to each vertex is correct") {
         std::unordered_map<int, int> expected_shortest_paths = {
@@ -80,5 +82,33 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path", "[DijkstraTes
             {4, 3}
         };
         REQUIRE(shortest_paths == expected_shortest_paths);
+    }
+}
+
+TEST_CASE( "Dijkstra's algorithm reconstructs the correct shortest path", "[DijkstraTest]" ) {
+    gralph::graph::WeightedGraph graph{5, 6};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 2},
+        {0, 3, 3},
+        {3, 2, 4},
+        {1, 2, 8},
+        {1, 4, 1},
+        {3, 4, 5}
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::algos::dijkstra dijkstra{graph};
+    dijkstra.solve(0);
+
+    SECTION("Shortest path from source to each vertex is correct") {
+        std::vector<int> expected_path_to_1 = {0, 1};
+        std::vector<int> expected_path_to_2 = {0, 3, 2};
+        std::vector<int> expected_path_to_3 = {0, 3};
+        std::vector<int> expected_path_to_4 = {0, 1, 4};
+
+        REQUIRE(dijkstra.get_shortest_path(1) == expected_path_to_1);
+        REQUIRE(dijkstra.get_shortest_path(2) == expected_path_to_2);
+        REQUIRE(dijkstra.get_shortest_path(3) == expected_path_to_3);
+        REQUIRE(dijkstra.get_shortest_path(4) == expected_path_to_4);
     }
 }

@@ -5,13 +5,14 @@
 namespace gralph {
 namespace search {
 
-dfs::dfs(const gralph::graph::WeightedGraph& graph, int source)
-    : m_source(source)
-    , m_vertices_num(graph.get_vertex_num())
-    {
-        const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();
-        m_stack.push(m_source);
-        m_parent[m_source] = -1;
+dfs::dfs(const gralph::graph::WeightedGraph& graph)
+    : m_graph(graph)
+    {}
+
+void dfs::solve(int source) {
+    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+        m_stack.push(source);
+        m_parent[source] = -1;
         while (!m_stack.empty()) {
             int vertex = m_stack.top();
             m_stack.pop();
@@ -32,7 +33,7 @@ dfs::dfs(const gralph::graph::WeightedGraph& graph, int source)
                 }
             }
         }
-    }
+}
 
 }   // namespace search
 }   // namespace gralph

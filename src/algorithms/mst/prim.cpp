@@ -11,20 +11,25 @@
 namespace gralph {
 namespace algos {
 
-prim::prim(const gralph::graph::WeightedGraph& graph) {
-    int V_num { graph.get_vertex_num() };
+prim::prim(const gralph::graph::WeightedGraph& graph) 
+    : m_graph(graph)
+    {}
+
+
+void prim::solve(int source) {
+    int V_num { m_graph.get_vertex_num() };
     for (int i = 0; i < V_num; ++i) {
-        mst[i] = std::vector<int>();
+        m_mst[i] = std::vector<int>();
     }
 
-    const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();
-    added.insert(0);
-    while (ssize(added) < V_num) {
+    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+    m_added.insert(source);
+    while (ssize(m_added) < V_num) {
         int min_val = std::numeric_limits<int>::max();
         int vertex_from = -1, vertex_to = -1;
-        for (int vertex : added) {
+        for (int vertex : m_added) {
             for (int candidate = 0; candidate < V_num; ++candidate) {
-                if (!added.contains(candidate)) {
+                if (!m_added.contains(candidate)) {
                     int weight = { graph_repr.at(vertex)[candidate] };
                     if (0 < weight && weight <= min_val) {
                         min_val = { weight };
@@ -35,17 +40,17 @@ prim::prim(const gralph::graph::WeightedGraph& graph) {
             }
         }
 
-        if (vertex_from == -1 && vertex_to == -1) {  // no mst in the graph
-            cost = 0;
-            for (auto& [key, value] : mst) {
+        if (vertex_from == -1 && vertex_to == -1) {  // no m_mst in the graph
+            m_cost = 0;
+            for (auto& [key, value] : m_mst) {
                 value.clear();
             }
             return;
         }
 
-        mst[vertex_from].push_back(vertex_to);
-        added.insert(vertex_to);
-        cost += min_val;
+        m_mst[vertex_from].push_back(vertex_to);
+        m_added.insert(vertex_to);
+        m_cost += min_val;
     }
 }
 

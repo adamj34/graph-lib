@@ -13,7 +13,8 @@ TEST_CASE("BFS finds all vertices in a connected graph", "[bfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::bfs bfs_algo{graph, 0};
+    gralph::search::bfs bfs_algo{graph};
+    bfs_algo.solve();
     std::unordered_set<int> visited_vertices = bfs_algo.get_visited();
 
     SECTION("BFS finds all vertices in a connected graph") {
@@ -33,7 +34,8 @@ TEST_CASE("BFS finds all vertices in a graph with multiple connected components"
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::bfs bfs_algo{graph, 0};
+    gralph::search::bfs bfs_algo{graph};
+    bfs_algo.solve();
     std::unordered_set<int> visited_vertices = bfs_algo.get_visited();
 
     SECTION("BFS finds all vertices in a graph with multiple connected components") {
@@ -53,7 +55,8 @@ TEST_CASE("BFS correctly handles a disconnected source vertex", "[bfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::bfs bfs_algo{graph, 5};
+    gralph::search::bfs bfs_algo{graph};
+    bfs_algo.solve(5);
     std::unordered_set<int> visited_vertices = bfs_algo.get_visited();
 
     SECTION("BFS correctly handles a disconnected source vertex") {

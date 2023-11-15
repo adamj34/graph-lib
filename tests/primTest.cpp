@@ -14,6 +14,7 @@ TEST_CASE( "Prim's algorithm finds the correct minimal spanning tree", "[PrimTes
     graph.build_edges(coords_tuples);
 
     gralph::algos::prim prim_algo{graph};
+    prim_algo.solve(0);
     std::map<int, std::vector<int>> mst = { prim_algo.get_mst() };
 
     SECTION("Number of edges in MST is correct") {
@@ -44,6 +45,7 @@ TEST_CASE( "Prim's algorithm handles a graph with no edges", "[PrimTest]" ) {
     gralph::graph::WeightedGraph graph{5, 0}; // 5 vertices, 0 edges
 
     gralph::algos::prim prim_algo{graph};
+    prim_algo.solve();
     std::map<int, std::vector<int>> mst = { prim_algo.get_mst() };
 
     SECTION("Number of edges in MST is correct") {

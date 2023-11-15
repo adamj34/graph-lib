@@ -2,6 +2,7 @@
 #define ALGORITHMS_SHORTEST_PATH_DIJKSTRA_HPP
 
 #include "graph_repr/WeightedGraph.hpp"
+#include "algorithms/shortest_path/IShortestPathFinder.hpp"
 
 #include <unordered_set>
 #include <unordered_map>
@@ -10,18 +11,24 @@
 namespace gralph {
 namespace algos {
 
-class Dijkstra {
+class dijkstra : public IShortestPathFinder {
     private:
+        const graph::WeightedGraph& m_graph;
         std::unordered_map<int, int> m_D {};
         std::unordered_set<int> m_V_prime {};
+        std::unordered_map<int, int> m_predecessor {};
         int m_source { 0 };
 
     public:
-        explicit Dijkstra(const graph::WeightedGraph& graph, int source);
+        explicit dijkstra(const graph::WeightedGraph& graph);
 
-        const std::unordered_map<int, int>& get_shortest_paths() const { return m_D; };
+        void solve(int source = 0) override;
 
-        int get_shortest_path(int vertex) const { return m_D.at(vertex); };
+        const std::unordered_map<int, int>& get_shortest_path_costs() const { return m_D; };
+
+        int get_shortest_path_cost(int vertex) override { return m_D.at(vertex); };
+
+        std::vector<int> get_shortest_path(int destination) override;
 };
 
 } // namespace algos

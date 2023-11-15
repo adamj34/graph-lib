@@ -24,7 +24,9 @@ class fleuryCycle {
 
         int choose_starting_point();
     public:
-        fleuryCycle(const gralph::graph::WeightedGraph& graph, int source);
+        explicit fleuryCycle(const gralph::graph::WeightedGraph& graph);
+
+        void solve(int source = 0);
 
         std::vector<std::pair<int, int>> get_eulerian_cycle() { return m_eulerian_cycle; };
 

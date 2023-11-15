@@ -1,10 +1,10 @@
 #include "graph_repr/WeightedGraph.hpp"
-#include "algorithms/chinese_postman/chinesePostman.hpp"
+#include "problems/chinesePostman.hpp"
 
 namespace gralph {
-namespace chinese_postman {
+namespace problems {
 
-chinesePostman::chinesePostman(const gralph::graph::WeightedGraph& graph)
+problems::chinesePostman(const gralph::graph::WeightedGraph& graph)
     : m_graph(graph)
     {
         if (!check_eulerian()) {
@@ -15,6 +15,6 @@ chinesePostman::chinesePostman(const gralph::graph::WeightedGraph& graph)
     }
 
     
-} // namespace chinese_postman
+} // namespace problems
 }  // namespace gralph
 

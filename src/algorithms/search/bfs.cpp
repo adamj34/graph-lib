@@ -7,12 +7,13 @@
 namespace gralph {
 namespace search {
 
-bfs::bfs(const gralph::graph::WeightedGraph& graph, int source)
-    : m_source(source)
-    , m_vertices_num(graph.get_vertex_num())
-    {
-        const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();
-        m_queue.push(m_source);
+bfs::bfs(const gralph::graph::WeightedGraph& graph)
+    : m_graph(graph)
+    {}
+
+void bfs::solve(int source) {
+    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+        m_queue.push(source);
         while (!m_queue.empty()) {
             int vertex = m_queue.front();
             m_queue.pop();
@@ -30,7 +31,7 @@ bfs::bfs(const gralph::graph::WeightedGraph& graph, int source)
                 }
             }
         }
-    }
+}
 
 }   // namespace search
 }   // namespace gralph

@@ -5,7 +5,7 @@
 namespace gralph {
 namespace search {
 
-gralph::search::dfs::dfs(const gralph::graph::WeightedGraph &graph, int source)
+dfs::dfs(const gralph::graph::WeightedGraph& graph, int source)
     : m_source(source)
     , m_vertices_num(graph.get_vertex_num())
     {
@@ -19,13 +19,13 @@ gralph::search::dfs::dfs(const gralph::graph::WeightedGraph &graph, int source)
             if (!m_visited.contains(vertex)) {
                 m_visited.insert(vertex);
                 
-                for (int i = 0; i < graph.get_vertex_num(); i++) {
-                    int child_weight = graph_repr.at(vertex)[i];
+                for (auto &[node, val] : graph_repr) {
+                    int child_weight = graph_repr.at(vertex)[node];
                     if (child_weight != 0) {
-                        if (!m_visited.contains(i)) {
-                            m_stack.push(i);
-                            m_parent[i] = vertex;
-                        } else if (m_parent[vertex] != i) {  // was visited and has a parent, 
+                        if (!m_visited.contains(node)) {
+                            m_stack.push(node);
+                            m_parent[node] = vertex;
+                        } else if (m_parent[vertex] != node) {  // was visited and has a parent, 
                             m_cycle = true;                  // but it's not the parent of the current vertex
                         }
                     }

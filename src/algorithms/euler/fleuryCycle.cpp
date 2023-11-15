@@ -6,7 +6,7 @@
 namespace gralph {
 namespace euler {
 
-gralph::euler::fleuryCycle::fleuryCycle(const gralph::graph::WeightedGraph& graph, int source) 
+fleuryCycle::fleuryCycle(const gralph::graph::WeightedGraph& graph, int source) 
     : m_source(source)
     , m_graph(graph)
     , m_is_eulerian(check_euler_cycle())
@@ -47,7 +47,7 @@ gralph::euler::fleuryCycle::fleuryCycle(const gralph::graph::WeightedGraph& grap
     }
 
 
-bool gralph::euler::fleuryCycle::check_euler_cycle() {
+bool fleuryCycle::check_euler_cycle() {
     for (auto &[vertex, neighbours] : m_graph.get_graph()) {
         if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
             return false;
@@ -56,7 +56,7 @@ bool gralph::euler::fleuryCycle::check_euler_cycle() {
     return true;
 }
 
-bool gralph::euler::fleuryCycle::check_euler_path() {
+bool fleuryCycle::check_euler_path() {
     int odd_deg_vertices { 0 };
     for (auto &[vertex, neighbours] : m_graph.get_graph()) {
         if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
@@ -66,7 +66,7 @@ bool gralph::euler::fleuryCycle::check_euler_path() {
     return (odd_deg_vertices == 2) || (odd_deg_vertices == 0);
 }
 
-int gralph::euler::fleuryCycle::find_starting_point() {
+int fleuryCycle::find_starting_point() {
     for (auto &[vertex, neighbours] : m_graph.get_graph()) {
         if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
                 return vertex;
@@ -75,7 +75,7 @@ int gralph::euler::fleuryCycle::find_starting_point() {
     return 0;
 }
 
-int gralph::euler::fleuryCycle::choose_starting_point() {
+int fleuryCycle::choose_starting_point() {
     int start_node {};
     if (!m_is_eulerian && !m_is_semi_eulerian) {
         return -1;

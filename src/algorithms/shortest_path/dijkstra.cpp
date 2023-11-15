@@ -6,7 +6,7 @@
 namespace gralph {
 namespace algos {
 
-gralph::algos::Dijkstra::Dijkstra(const graph::WeightedGraph &graph, int source) 
+Dijkstra::Dijkstra(const graph::WeightedGraph &graph, int source) 
     : m_source(source)
     {
         const std::map<int, std::vector<int>>& graph_repr = graph.get_graph();

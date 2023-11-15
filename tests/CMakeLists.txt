@@ -12,6 +12,7 @@ add_executable(gralphTests
     primTest.cpp
     dijkstraTest.cpp
     dfsTest.cpp
+    bfsTest.cpp
     fleuryCycleTest.cpp
 )
 

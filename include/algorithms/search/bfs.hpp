@@ -4,6 +4,7 @@
 #include "graph_repr/WeightedGraph.hpp"
 
 #include <unordered_set>
+#include <queue>
 
 namespace gralph {
 namespace search {
@@ -11,7 +12,9 @@ namespace search {
 class bfs {
     private:
         int m_source { 0 };
+        int m_vertices_num { 0 };
         std::unordered_set<int> m_visited {};
+        std::queue<int> m_queue {};
 
     public:
         bfs(const gralph::graph::WeightedGraph& graph, int source);

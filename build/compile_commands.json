@@ -31,6 +31,12 @@
 },
 {
   "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o -c /home/addar/graph-lib/src/algorithms/search/bfs.cpp",
+  "file": "/home/addar/graph-lib/src/algorithms/search/bfs.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o -c /home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
   "file": "/home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
   "output": "src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o"
@@ -58,6 +64,12 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o -c /home/addar/graph-lib/tests/dfsTest.cpp",
   "file": "/home/addar/graph-lib/tests/dfsTest.cpp",
   "output": "tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/bfsTest.cpp.o -c /home/addar/graph-lib/tests/bfsTest.cpp",
+  "file": "/home/addar/graph-lib/tests/bfsTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/bfsTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
@@ -154,6 +166,12 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
   "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
   "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
@@ -442,6 +460,12 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
   "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
   "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",

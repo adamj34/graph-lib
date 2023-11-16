@@ -6,6 +6,6 @@ add_library(gralph
             algorithms/search/dfs.cpp
             algorithms/search/bfs.cpp
             algorithms/euler/fleuryCycle.cpp
-            # problems/chinesePostman.cpp
+            problems/chinesePostman.cpp
 )
 

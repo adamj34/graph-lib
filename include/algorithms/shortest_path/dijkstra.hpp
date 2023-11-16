@@ -20,15 +20,16 @@ class dijkstra : public IShortestPathFinder {
         int m_source { 0 };
 
     public:
+
         explicit dijkstra(const graph::WeightedGraph& graph);
 
         void solve(int source = 0) override;
 
         const std::unordered_map<int, int>& get_shortest_path_costs() const { return m_D; };
 
-        int get_shortest_path_cost(int vertex) override { return m_D.at(vertex); };
+        int get_shortest_path_cost(int vertex) const override { return m_D.at(vertex); };
 
-        std::vector<int> get_shortest_path(int destination) override;
+        std::vector<std::pair<int, int>> get_shortest_path(int destination) const override;
 };
 
 } // namespace algos

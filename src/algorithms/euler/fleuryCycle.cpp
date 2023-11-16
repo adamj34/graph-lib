@@ -4,7 +4,7 @@
 
 
 namespace gralph {
-namespace euler {
+namespace algos {
 
 fleuryCycle::fleuryCycle(const gralph::graph::WeightedGraph& graph) 
     : m_graph(graph)

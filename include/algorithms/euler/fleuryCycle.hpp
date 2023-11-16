@@ -2,12 +2,13 @@
 #define ALGORITHMS_EULER_FLEURYCYCLE_HPP
 
 #include "graph_repr/WeightedGraph.hpp"
+#include "algorithms/euler/IEulerCycleFinder.hpp"
 #include <vector>
 
 namespace gralph {
-namespace euler {
+namespace algos {
 
-class fleuryCycle {
+class fleuryCycle : public IEulerCycleFinder {
     private:
         int m_source { 0 };
         gralph::graph::WeightedGraph m_graph;
@@ -23,21 +24,22 @@ class fleuryCycle {
         int find_starting_point();
 
         int choose_starting_point();
+
     public:
         explicit fleuryCycle(const gralph::graph::WeightedGraph& graph);
 
-        void solve(int source = 0);
+        void solve(int source = 0) override;
 
-        std::vector<std::pair<int, int>> get_eulerian_cycle() { return m_eulerian_cycle; };
+        std::vector<std::pair<int, int>> get_eulerian_cycle() override { return m_eulerian_cycle; };
 
-        bool is_eulerian() { return m_is_eulerian; };
+        bool is_eulerian() override { return m_is_eulerian; };
 
-        bool is_semi_eulerian() { return m_is_semi_eulerian; };
+        bool is_semi_eulerian() override { return m_is_semi_eulerian; };
 
-        int get_cost() { return m_cost; };
+        int get_cost() override { return m_cost; };
 };
 
-}  // namespace euler
+}  // namespace algos
 }  // namespace gralph
 
 #endif // ALGORITHMS_EULER_FLEURY_HPP

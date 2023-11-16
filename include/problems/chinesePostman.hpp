@@ -4,7 +4,10 @@
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/euler/fleuryCycle.hpp"
 #include "algorithms/shortest_path/dijkstra.hpp"
+#include "algorithms/shortest_path/IShortestPathFinder.hpp"
 
+#include <vector>
+#include <unordered_set>
 
 namespace gralph {
 namespace problems {
@@ -12,19 +15,26 @@ namespace problems {
 class chinesePostman {
     private:
         const gralph::graph::WeightedGraph& m_graph;
-        gralph::algorithms::euler::fleuryCycle m_fleuryCycle;
-        gralph::algorithms::shortest_path::dijkstra m_dijkstra;
+        IShortestPathFinder& m_pathFinder;
+        IEulerCycleFinder& m_eulerCycleFinder;
+        int m_cost {};
+        std::vector<std::pair<int, int>> m_solution {};
+
+        std::unordered_set<int> get_odd_vertices();
+
+        std::vector<std::tuple<int, int, int>> construct_full_graph(std::unordered_set<int>& odd_vertices);
 
     public:
-        chinesePostman(const gralph::graph::WeightedGraph& graph, int source)
-            : m_graph(graph), 
-              m_fleuryCycle(graph, source), 
-              m_dijkstra(graph, source) 
-        {
-            // Constructor implementation
-        }
+        chinesePostman(const gralph::graph::WeightedGraph& graph, 
+                       IShortestPathFinder& pathFinder,
+                       IEulerCycleFinder& eulerCycleFinder);
 
-        // Other methods...
+        void solve();
+
+        int get_cost() const { return m_cost; };
+
+        std::vector<std::pair<int, int>> get_solution() { return m_solution; };
+
 };
 
 

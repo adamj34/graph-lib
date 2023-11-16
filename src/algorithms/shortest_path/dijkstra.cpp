@@ -10,11 +10,15 @@ dijkstra::dijkstra(const graph::WeightedGraph& graph)
     : m_graph(graph)
     {}
 
-
 void dijkstra::solve(int source) {
     m_source = source;
     const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
     std::vector<int> source_vec = graph_repr.at(m_source);
+
+    // Reset the private members
+    m_D.clear();
+    m_predecessor.clear();
+    m_V_prime.clear();
 
     for (int i = 0; i < ssize(source_vec); i++) {
         int weight = source_vec[i];
@@ -58,20 +62,15 @@ void dijkstra::solve(int source) {
 }
 
 
-std::vector<int> dijkstra::get_shortest_path(int destination) {
-    std::vector<int> path {};
-    int current = destination;
-
-    // Start from the destination and go backwards
-    while (current != m_source) {
-        path.push_back(current);
-        current = m_predecessor.at(current);  // Follow the predecessor
+std::vector<std::pair<int, int>> dijkstra::get_shortest_path(int destination) const {
+    std::vector<std::pair<int, int>> path {};
+    int curr_vertex = destination;
+    while (curr_vertex != m_source) {
+        int predecessor = m_predecessor.at(curr_vertex);
+        path.push_back({predecessor, curr_vertex});
+        curr_vertex = predecessor;
     }
-    path.push_back(m_source);
-
-    // Reverse the path to get it from source to destination
     std::reverse(path.begin(), path.end());
-
     return path;
 }
 

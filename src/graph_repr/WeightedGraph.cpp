@@ -32,9 +32,9 @@ void WeightedGraph::add_vertex() {
     m_graph_matrix[m_V_num - 1] = std::vector<int>(m_V_num, 0);
 }
 
-int WeightedGraph::get_vertex_deg(int node) {
-    return std::count_if(m_graph_matrix[node].begin(),
-                         m_graph_matrix[node].end(),
+int WeightedGraph::get_vertex_deg(int node) const {
+    return std::count_if(m_graph_matrix.at(node).begin(),
+                         m_graph_matrix.at(node).end(),
                          [](int i) { return i != 0; });
 }
 
@@ -66,8 +66,8 @@ void WeightedGraph::delete_edge(const std::pair<int, int>& edge) {
     --m_E_num;
 }
 
-int WeightedGraph::get_edge_weight(const std::pair<int, int>& edge) {
-    return m_graph_matrix[edge.first][edge.second];
+int WeightedGraph::get_edge_weight(const std::pair<int, int>& edge) const {
+    return m_graph_matrix.at(edge.first)[edge.second];
 }
 
 void WeightedGraph::print_matrix() {

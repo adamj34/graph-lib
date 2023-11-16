@@ -101,10 +101,10 @@ TEST_CASE( "Dijkstra's algorithm reconstructs the correct shortest path", "[Dijk
     dijkstra.solve(0);
 
     SECTION("Shortest path from source to each vertex is correct") {
-        std::vector<int> expected_path_to_1 = {0, 1};
-        std::vector<int> expected_path_to_2 = {0, 3, 2};
-        std::vector<int> expected_path_to_3 = {0, 3};
-        std::vector<int> expected_path_to_4 = {0, 1, 4};
+        std::vector<std::pair<int, int>> expected_path_to_1 = {{0, 1}};
+        std::vector<std::pair<int, int>> expected_path_to_2 = {{0, 3}, {3, 2}};
+        std::vector<std::pair<int, int>> expected_path_to_3 = {{0, 3}};
+        std::vector<std::pair<int, int>> expected_path_to_4 = {{0, 1}, {1, 4}};
 
         REQUIRE(dijkstra.get_shortest_path(1) == expected_path_to_1);
         REQUIRE(dijkstra.get_shortest_path(2) == expected_path_to_2);

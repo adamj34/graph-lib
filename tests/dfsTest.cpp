@@ -168,10 +168,11 @@ TEST_CASE( "DFS handles disconnected graphs", "[dfs]" ) {
 }
 
 TEST_CASE("DFS correctly identifies a disconnected graph", "[dfs]") {
-    gralph::graph::WeightedGraph graph{5, 2};
+    gralph::graph::WeightedGraph graph{5, 3};
     std::vector<std::tuple<int, int, int>> coords_tuples = {
         {0, 1, 2},
         {2, 3, 3},
+        {3, 4, 2}
     };
     graph.build_edges(coords_tuples);
 

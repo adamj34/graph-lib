@@ -1,8 +1,10 @@
-#ifndef ALGORITHMS_EULER_FLEURYCYCLE_HPP
-#define ALGORITHMS_EULER_FLEURYCYCLE_HPP
+#ifndef ALGORITHMS_EULER_FLEURYCYCLE_HPP_
+#define ALGORITHMS_EULER_FLEURYCYCLE_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/euler/IEulerCycleFinder.hpp"
+
+#include <utility>
 #include <vector>
 
 namespace gralph {
@@ -13,7 +15,7 @@ class fleuryCycle : public IEulerCycleFinder {
         int m_source { 0 };
         gralph::graph::WeightedGraph m_graph;
         std::vector<std::pair<int, int>> m_eulerian_cycle {};
-        bool m_is_eulerian {}; 
+        bool m_is_eulerian {};
         bool m_is_semi_eulerian {};
         int m_cost { 0 };
 
@@ -42,4 +44,4 @@ class fleuryCycle : public IEulerCycleFinder {
 }  // namespace algos
 }  // namespace gralph
 
-#endif // ALGORITHMS_EULER_FLEURY_HPP
+#endif // ALGORITHMS_EULER_FLEURYCYCLE_HPP_

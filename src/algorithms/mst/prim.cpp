@@ -11,7 +11,7 @@
 namespace gralph {
 namespace algos {
 
-prim::prim(const gralph::graph::WeightedGraph& graph) 
+prim::prim(const gralph::graph::WeightedGraph& graph)
     : m_graph(graph)
     {}
 
@@ -54,6 +54,6 @@ void prim::solve(int source) {
     }
 }
 
-} // namespace algos
+}  // namespace algos
 }  // namespace gralph
 

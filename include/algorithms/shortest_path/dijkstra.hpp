@@ -1,5 +1,5 @@
-#ifndef ALGORITHMS_SHORTEST_PATH_DIJKSTRA_HPP
-#define ALGORITHMS_SHORTEST_PATH_DIJKSTRA_HPP
+#ifndef ALGORITHMS_SHORTEST_PATH_DIJKSTRA_HPP_
+#define ALGORITHMS_SHORTEST_PATH_DIJKSTRA_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/shortest_path/IShortestPathFinder.hpp"
@@ -7,6 +7,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <vector>
+#include <utility>
 
 namespace gralph {
 namespace algos {
@@ -25,9 +26,9 @@ class dijkstra : public IShortestPathFinder {
 
         void solve(int source = 0) override;
 
-        const std::unordered_map<int, int>& get_shortest_path_costs() const { return m_D; };
+        const std::unordered_map<int, int>& get_shortest_path_costs() const { return m_D; }
 
-        int get_shortest_path_cost(int vertex) const override { return m_D.at(vertex); };
+        int get_shortest_path_cost(int vertex) const override { return m_D.at(vertex); }
 
         std::vector<std::pair<int, int>> get_shortest_path(int destination) const override;
 };

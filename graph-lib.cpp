@@ -3,6 +3,8 @@
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/search/bfs.hpp"
 #include "helpers/buildSubsets.hpp"
+#include "problems/chinesePostman.hpp"
+#include "algorithms/euler/fleuryCycle.hpp"
 
 #include <iostream>
 #include <vector>
@@ -13,21 +15,32 @@ using namespace std;
 
 int main() {
 
+    gralph::graph::WeightedGraph graph{8, 9};
     std::vector<std::tuple<int, int, int>> coords_tuples = {
-        {0, 1, 2},
-        {0, 3, 3},
-        {3, 2, 4},
-        {1, 2, 8},
-        {1, 4, 1},
+        {0, 1, 5},
+        {1, 2, 1},
+        {2, 3, 3},
+        {3, 4, 2},
+        {2, 4, 1},
+        {4, 5, 2},
+        {2, 6, 1},
+        {6, 4, 2},
+        {1, 7, 3}
     };
+    graph.build_edges(coords_tuples);
 
-    std::vector<std::vector<std::tuple<int, int, int>>> subsets = gralph::helpers::build_subsets(coords_tuples);
-    for (auto subset : subsets) {
-        for (auto edge : subset) {
-            std::cout << "(" << std::get<0>(edge) << ", " << std::get<1>(edge) << ", " << std::get<2>(edge) << ") ";
-        }
-        std::cout << std::endl;
+    gralph::algos::fleuryCycle euler_cycle_finder{graph};
+    gralph::algos::dijkstra path_finder{graph};
+
+    gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
+    cp.solve();
+    std::vector<std::pair<int, int>> solution = cp.get_solution();
+
+    int cost = cp.get_cost();
+    for (auto [from_vertex, to_vertex] : solution) {
+        std::cout << "(" << from_vertex << ", " << to_vertex << ") ";
     }
 
-    cout << ssize(subsets) << endl;
+    cout << endl << cost << endl;
+
 }

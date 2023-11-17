@@ -1,5 +1,5 @@
-#ifndef ALGORITHMS_SEARCH_BFS_HPP
-#define ALGORITHMS_SEARCH_BFS_HPP
+#ifndef ALGORITHMS_SEARCH_BFS_HPP_
+#define ALGORITHMS_SEARCH_BFS_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
 
@@ -20,10 +20,10 @@ class bfs {
 
         void solve(int source = 0);
 
-        const std::unordered_set<int>& get_visited() const { return m_visited; };
+        const std::unordered_set<int>& get_visited() const { return m_visited; }
 };
 
 }  // namespace search
 }  // namespace gralph
 
-#endif // ALGORITHMS_SEARCH_BFS_HPP
+#endif // ALGORITHMS_SEARCH_BFS_HPP_

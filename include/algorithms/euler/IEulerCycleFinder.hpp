@@ -14,4 +14,4 @@ public:
     virtual std::vector<std::pair<int, int>> get_eulerian_cycle() = 0;
 };
 
-#endif // ALGORITHMS_EULER_IEULER_CYCLE_FINDER_HPP
+#endif  // ALGORITHMS_EULER_IEULER_CYCLE_FINDER_HPP

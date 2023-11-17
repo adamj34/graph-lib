@@ -1,5 +1,5 @@
-#ifndef HELPERS_BUILDSUBSETS_HPP
-#define HELPERS_BUILDSUBSETS_HPP
+#ifndef HELPERS_BUILDSUBSETS_HPP_
+#define HELPERS_BUILDSUBSETS_HPP_
 
 #include <vector>
 
@@ -24,7 +24,7 @@ std::vector<std::vector<T>> build_subsets(const std::vector<T>& set) {
     return subsets;
 }
 
-} // namespace helpers
-} // namespace gralph
+}  // namespace helpers
+}  // namespace gralph
 
-#endif  // HELPERS_BUILDSUBSETS_HPP
+#endif  // HELPERS_BUILDSUBSETS_HPP_

@@ -70,6 +70,19 @@ int WeightedGraph::get_edge_weight(const std::pair<int, int>& edge) const {
     return m_graph_matrix.at(edge.first)[edge.second];
 }
 
+std::vector<std::tuple<int, int, int>> WeightedGraph::get_all_edges() const {
+    std::vector<std::tuple<int, int, int>> edges {};
+    for (const auto& [k, v] : m_graph_matrix) {
+        for (int j = 0; j < m_V_num; ++j) {
+            if (m_graph_matrix.at(k)[j] != 0) {
+                edges.push_back({k, j, m_graph_matrix.at(k)[j]});
+            }
+        }
+    }
+
+    return edges;
+}
+
 void WeightedGraph::print_matrix() {
     std::cout << 'X' << " ";
     for (const auto& [k, v] : m_graph_matrix) {
@@ -86,7 +99,7 @@ void WeightedGraph::print_matrix() {
     std::cout << '\n';
 }
 
-} // namespace graph
-} // namespace gralph
+}  // namespace graph
+}  // namespace gralph
 
 

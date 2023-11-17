@@ -4,6 +4,7 @@
 #include <vector>
 #include <tuple>
 #include <map>
+#include <utility>
 
 namespace gralph {
 namespace graph {
@@ -25,6 +26,8 @@ class WeightedGraph {
 
         void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples);
 
+        std::vector<std::tuple<int, int, int>> get_all_edges() const;
+
         void add_vertex();
 
         void delete_vertex(int node);
@@ -43,4 +46,4 @@ class WeightedGraph {
 }
 }
 
-#endif // GRAPH_REPR_WEIGHTEDGRAPH_HPP_"
+#endif // GRAPH_REPR_WEIGHTEDGRAPH_HPP_

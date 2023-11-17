@@ -1,5 +1,5 @@
-#ifndef ALGORITHMS_MST_IMST_HPP
-#define ALGORITHMS_MST_IMST_HPP
+#ifndef ALGORITHMS_MST_IMST_HPP_
+#define ALGORITHMS_MST_IMST_HPP_
 
 #include <vector>
 #include <map>
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif // ALGORITHMS_MST_IMST_HPP
+#endif // ALGORITHMS_MST_IMST_HPP_

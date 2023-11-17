@@ -1,5 +1,5 @@
-#ifndef ALGORITHMS_SEARCH_DFS_HPP
-#define ALGORITHMS_SEARCH_DFS_HPP
+#ifndef ALGORITHMS_SEARCH_DFS_HPP_
+#define ALGORITHMS_SEARCH_DFS_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
 
@@ -27,11 +27,11 @@ class dfs {
 
         bool contains_cycle() { return m_cycle; };
 
-        bool is_disconnected() { return ssize(m_visited) != m_graph.get_vertex_num(); };
+        bool is_disconnected();
 };
 
 }  // namespace search
 }  // namespace gralph
 
 
-#endif // ALGORITHMS_SEARCH_DFS_HPP
+#endif // ALGORITHMS_SEARCH_DFS_HPP_

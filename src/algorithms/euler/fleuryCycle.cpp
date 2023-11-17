@@ -19,16 +19,17 @@ void fleuryCycle::solve(int source) {
     int curr_node = choose_starting_point();
     if (curr_node == -1) { return; }
     while (m_graph.get_edge_num() > 0) {
-
         bool valid_edge_found { false };
         std::pair<int, int> edge {};
         for (int i = 0; i < m_graph.get_vertex_num(); i++) {
             if (m_graph.get_graph().at(curr_node)[i] != 0) {
-                edge.first = curr_node; edge.second = i;
+                edge.first = curr_node;
+                edge.second = i;
                 int deleted_edge_weight = m_graph.get_edge_weight(edge);
                 m_graph.delete_edge(edge);
-                gralph::search::dfs dfs_algo{m_graph}; 
-                dfs_algo.solve(curr_node);  
+
+                gralph::search::dfs dfs_algo{m_graph};
+                dfs_algo.solve(curr_node);
                 if (!dfs_algo.is_disconnected()) {
                     m_eulerian_cycle.push_back(edge);
                     curr_node = i;
@@ -49,7 +50,6 @@ void fleuryCycle::solve(int source) {
         }
     }
 }
-
 
 bool fleuryCycle::check_euler_cycle() {
     for (auto &[vertex, neighbours] : m_graph.get_graph()) {
@@ -91,5 +91,5 @@ int fleuryCycle::choose_starting_point() {
     return start_node;
 }
 
-}  // namespace euler
+}  // namespace algos
 }  // namespace gralph

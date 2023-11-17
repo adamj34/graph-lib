@@ -14,6 +14,7 @@ add_executable(gralphTests
     dfsTest.cpp
     bfsTest.cpp
     fleuryCycleTest.cpp
+    chinesePostmanTest.cpp
 )
 
 target_link_libraries(gralphTests

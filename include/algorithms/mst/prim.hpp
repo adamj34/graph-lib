@@ -24,9 +24,9 @@ class prim : public IMst {
 
         void solve(int source = 0) override;
 
-        const std::map<int, std::vector<int>>& get_mst() const override { return m_mst; };
+        const std::map<int, std::vector<int>>& get_mst() const override { return m_mst; }
 
-        int get_cost() const override { return m_cost; };
+        int get_cost() const override { return m_cost; }
 };
 
 }

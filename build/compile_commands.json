@@ -85,6 +85,12 @@
 },
 {
   "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/chinesePostmanTest.cpp.o -c /home/addar/graph-lib/tests/chinesePostmanTest.cpp",
+  "file": "/home/addar/graph-lib/tests/chinesePostmanTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/chinesePostmanTest.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
   "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
   "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o"

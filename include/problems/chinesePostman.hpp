@@ -1,5 +1,5 @@
-#ifndef PROBLEMS_CHINESE_POSTMAN_HPP
-#define PROBLEMS_CHINESE_POSTMAN_HPP
+#ifndef PROBLEMS_CHINESEPOSTMAN_HPP_
+#define PROBLEMS_CHINESEPOSTMAN_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/euler/fleuryCycle.hpp"
@@ -8,6 +8,8 @@
 
 #include <vector>
 #include <unordered_set>
+#include <tuple>
+#include <utility>
 
 namespace gralph {
 namespace problems {
@@ -35,14 +37,13 @@ class chinesePostman {
 
         void solve();
 
-        int get_cost() const { return m_cost; };
+        int get_cost() const { return m_cost; }
 
-        std::vector<std::pair<int, int>> get_solution() { return m_solution; };
-
+        std::vector<std::pair<int, int>> get_solution() { return m_solution; }
 };
 
 
 }  // namespace problems
 }  // namespace gralph
 
-#endif // PROBLEMS_CHINESE_POSTMAN_HPP
+#endif  // PROBLEMS_CHINESEPOSTMAN_HPP_

@@ -13,7 +13,7 @@ TEST_CASE("Fleury's algorithm finds an Eulerian cycle in a simple graph (1)", "[
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 
@@ -51,7 +51,7 @@ TEST_CASE("Fleury's algorithm finds an Eulerian cycle in a simple graph (2)", "[
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(2);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 
@@ -84,7 +84,7 @@ TEST_CASE("Fleury's algorithm finds an Eulerian cycle in a simple graph (3)", "[
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 
@@ -103,9 +103,9 @@ TEST_CASE("Fleury's algorithm finds an Eulerian cycle in a simple graph (3)", "[
             {0, 1},
             {1, 2},
             {2, 0},
-            {0, 4},
-            {4, 3},
-            {3, 0}
+            {0, 3},
+            {3, 4},
+            {4, 0}
         };
         REQUIRE(eulerian_path == expected_path);
     }
@@ -121,7 +121,7 @@ TEST_CASE("Fleury's algorithm finds an Eulerian path in a graph with a bridge", 
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 
@@ -145,7 +145,7 @@ TEST_CASE("Fleury's algorithm correctly handles non-eulerian & semi-eulerian gra
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     SECTION("Fleury's algorithm correctly identifies the type of graph") {
         REQUIRE(fleury_algo.is_eulerian() == false);
@@ -168,6 +168,48 @@ TEST_CASE("Fleury's algorithm correctly handles non-eulerian & semi-eulerian gra
     }
 }
 
+TEST_CASE("Fleury's algorithm correctly handles non-eulerian & semi-eulerian graphs (2)", "[fleury]") {
+    gralph::graph::WeightedGraph graph{7, 8};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 5},
+        {1, 2, 1},
+        {2, 3, 3},
+        {3, 4, 2},
+        {2, 4, 1},
+        {4, 5, 2},
+        {2, 6, 1},
+        {6, 4, 2}
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::algos::fleuryCycle fleury_algo{graph};
+    fleury_algo.solve(0);
+    SECTION("Fleury's algorithm correctly identifies the type of graph") {
+        REQUIRE(fleury_algo.is_eulerian() == false);
+        REQUIRE(fleury_algo.is_semi_eulerian() == true);
+    }
+
+    std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
+
+    SECTION("Fleury's algorithm calculates the correct cost") {
+        REQUIRE(fleury_algo.get_cost() == 17);
+    }
+
+    SECTION("Fleury's algorithm correctly handles non-eulerian & semi-eulerian graphs") {
+        std::vector<std::pair<int, int>> expected_path = {
+            {0, 1},
+            {1, 2},
+            {2, 3},
+            {3, 4},
+            {4, 2},
+            {2, 6},
+            {6, 4},
+            {4, 5}
+        };
+        REQUIRE(eulerian_path == expected_path);
+    }
+}
+
 TEST_CASE("Fleury's algorithm correctly handles graphs with no Eulerian path (2)", "[fleury]") {
     gralph::graph::WeightedGraph graph{5, 4};
     std::vector<std::tuple<int, int, int>> coords_tuples = {
@@ -178,7 +220,7 @@ TEST_CASE("Fleury's algorithm correctly handles graphs with no Eulerian path (2)
     };
     graph.build_edges(coords_tuples);
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 
@@ -202,7 +244,7 @@ TEST_CASE("Fleury's algorithm correctly handles disconnected graphs", "[fleury]"
     gralph::graph::WeightedGraph graph{5, 0};
     graph.build_edges({});
 
-    gralph::euler::fleuryCycle fleury_algo{graph};
+    gralph::algos::fleuryCycle fleury_algo{graph};
     fleury_algo.solve(0);
     std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
 

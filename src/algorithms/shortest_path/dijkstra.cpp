@@ -61,7 +61,6 @@ void dijkstra::solve(int source) {
     }
 }
 
-
 std::vector<std::pair<int, int>> dijkstra::get_shortest_path(int destination) const {
     std::vector<std::pair<int, int>> path {};
     int curr_vertex = destination;

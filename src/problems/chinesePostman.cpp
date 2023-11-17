@@ -2,6 +2,11 @@
 #include "problems/chinesePostman.hpp"
 #include "algorithms/euler/IEulerCycleFinder.hpp"
 #include "algorithms/shortest_path/IShortestPathFinder.hpp"
+#include "helpers/buildSubsets.hpp"
+
+#include <limits>
+#include <unordered_set>
+#include <vector>
 
 namespace gralph {
 namespace problems {
@@ -40,7 +45,10 @@ void chinesePostman::solve() {
         m_cost = { euler_path_cost + shortest_path_cost };
     } else {
         std::unordered_set<int> odd_vertices { get_odd_vertices() };
-
+        std::vector<std::tuple<int, int, int>> full_graph { construct_full_graph(odd_vertices) };
+        std::vector<std::tuple<int, int, int>> min_matching { find_min_perfect_matching(full_graph) };
+        std::vector<std::tuple<int, int, int>> edges_to_add { find_edges_to_add(min_matching) };
+        
     }
 }
 
@@ -69,6 +77,47 @@ std::vector<std::tuple<int, int, int>> chinesePostman::construct_full_graph(std:
     }
 
     return edges;
+}
+
+std::vector<std::tuple<int, int, int>> chinesePostman::find_min_perfect_matching(std::vector<std::tuple<int, int, int>>& full_graph) {
+    std::vector<std::vector<std::tuple<int, int, int>>> subsets = gralph::helpers::build_subsets(full_graph);
+    std::vector<std::tuple<int, int, int>> min_matching {};
+    int min_matching_cost = { std::numeric_limits<int>::max() };
+    for (auto& subset : subsets) {
+        int subset_cost { 0 };
+        std::unordered_set<int> vertices {};
+        bool is_valid_matching { true };
+        for (auto& edge : subset) {
+            if (vertices.contains(std::get<0>(edge)) || vertices.contains(std::get<1>(edge))) {
+                break;
+            } else {
+                vertices.insert(std::get<0>(edge));
+                vertices.insert(std::get<1>(edge));
+                subset_cost += std::get<2>(edge);
+            }
+        }
+
+        if (is_valid_matching && (subset_cost < min_matching_cost)) {
+            min_matching = subset;
+            min_matching_cost = subset_cost;
+        }
+    }
+
+    return min_matching;
+}
+
+std::vector<std::tuple<int, int, int>> chinesePostman::find_edges_to_add(std::vector<std::tuple<int, int, int>>& min_matching) {
+    std::vector<std::tuple<int, int, int>> edges_to_add {};
+
+    for (auto [from_node, to_node, w] : min_matching) {
+        m_pathFinder.solve(from_node);
+        std::vector<std::pair<int, int>> shortest_path { m_pathFinder.get_shortest_path(to_node) };
+        for (auto [from_vertex, to_vertex] : shortest_path) {
+            edges_to_add.push_back({ from_vertex, to_vertex, m_graph.get_edge_weight({from_vertex, to_vertex}) });
+        }
+    }
+
+    return edges_to_add;
 }
 
 } // namespace problems

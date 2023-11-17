@@ -24,6 +24,10 @@ class chinesePostman {
 
         std::vector<std::tuple<int, int, int>> construct_full_graph(std::unordered_set<int>& odd_vertices);
 
+        std::vector<std::tuple<int, int, int>> find_min_perfect_matching(std::vector<std::tuple<int, int, int>>& full_graph);
+
+        std::vector<std::tuple<int, int, int>> find_edges_to_add(std::vector<std::tuple<int, int, int>>& min_matching);
+
     public:
         chinesePostman(const gralph::graph::WeightedGraph& graph, 
                        IShortestPathFinder& pathFinder,

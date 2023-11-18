@@ -52,6 +52,15 @@ void WeightedGraph::delete_vertex(int node) {
     }
 }
 
+std::vector<int> WeightedGraph::get_all_vertices() const {
+    std::vector<int> vertices {};
+    for (const auto& [k, v] : m_graph_matrix) {
+        vertices.push_back(k);
+    }
+
+    return vertices;
+}
+
 void WeightedGraph::add_edge(const std::tuple<int, int, int>& edge) {
     auto [coord_0, coord_1, weight] = edge;
     m_graph_matrix[coord_0][coord_1] = weight;

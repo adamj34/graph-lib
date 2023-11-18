@@ -26,7 +26,7 @@ class WeightedGraph {
 
         void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples);
 
-        std::vector<std::tuple<int, int, int>> get_all_edges() const;
+        std::vector<int> get_all_vertices() const;
 
         void add_vertex();
 
@@ -37,6 +37,8 @@ class WeightedGraph {
         void add_edge(const std::tuple<int, int, int>& edge);
 
         void delete_edge(const std::pair<int, int>& edge);
+
+        std::vector<std::tuple<int, int, int>> get_all_edges() const;
 
         int get_edge_weight(const std::pair<int, int>& edge) const;
 

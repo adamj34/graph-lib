@@ -6,10 +6,10 @@
 #include "algorithms/shortest_path/dijkstra.hpp"
 #include "algorithms/shortest_path/IShortestPathFinder.hpp"
 
+#include <utility>
 #include <vector>
 #include <unordered_set>
 #include <tuple>
-#include <utility>
 
 namespace gralph {
 namespace problems {

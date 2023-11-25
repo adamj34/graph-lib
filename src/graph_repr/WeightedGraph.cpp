@@ -24,18 +24,27 @@ void WeightedGraph::build_edges(const std::vector<std::tuple<int, int, int>>& co
     }
 }
 
-void WeightedGraph::add_vertex() {
-    ++m_V_num;
-    for (auto &[k, v] : m_graph_matrix) {
-        v.push_back(0);
+std::vector<int> WeightedGraph::get_all_vertices() const {
+    std::vector<int> vertices {};
+    for (const auto& [k, v] : m_graph_matrix) {
+        vertices.push_back(k);
     }
-    m_graph_matrix[m_V_num - 1] = std::vector<int>(m_V_num, 0);
+
+    return vertices;
 }
 
 int WeightedGraph::get_vertex_deg(int node) const {
     return std::count_if(m_graph_matrix.at(node).begin(),
                          m_graph_matrix.at(node).end(),
                          [](int i) { return i != 0; });
+}
+
+void WeightedGraph::add_vertex() {
+    ++m_V_num;
+    for (auto &[k, v] : m_graph_matrix) {
+        v.push_back(0);
+    }
+    m_graph_matrix[m_V_num - 1] = std::vector<int>(m_V_num, 0);
 }
 
 void WeightedGraph::delete_vertex(int node) {
@@ -52,14 +61,6 @@ void WeightedGraph::delete_vertex(int node) {
     }
 }
 
-std::vector<int> WeightedGraph::get_all_vertices() const {
-    std::vector<int> vertices {};
-    for (const auto& [k, v] : m_graph_matrix) {
-        vertices.push_back(k);
-    }
-
-    return vertices;
-}
 
 void WeightedGraph::add_edge(const std::tuple<int, int, int>& edge) {
     auto [coord_0, coord_1, weight] = edge;
@@ -75,7 +76,7 @@ void WeightedGraph::delete_edge(const std::pair<int, int>& edge) {
     --m_E_num;
 }
 
-int WeightedGraph::get_edge_weight(const std::pair<int, int>& edge) const {
+std::variant<std::unordered_set<int>, int> WeightedGraph::get_edge_weight(const std::pair<int, int>& edge) const {
     return m_graph_matrix.at(edge.first)[edge.second];
 }
 

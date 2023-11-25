@@ -1,5 +1,5 @@
-#ifndef GRAPH_REPR_WEIGHTEDGRAPH_HPP_
-#define GRAPH_REPR_WEIGHTEDGRAPH_HPP_
+#ifndef GRAPH_REPR_WEIGHTEDMULTIGRAPH_HPP_
+#define GRAPH_REPR_WEIGHTEDMULTIGRAPH_HPP_
 
 #include "graph_repr/IGraph.hpp"
 
@@ -7,21 +7,22 @@
 #include <tuple>
 #include <map>
 #include <utility>
+#include <unordered_set>
 
 namespace gralph {
 namespace graph {
 
-class WeightedGraph : public IGraph {
+class WeightedMultiGraph : public IGraph {
     private:
         int m_V_num {};
         int m_E_num {};
-        std::map<int, std::vector<int>> m_graph_matrix {};
+        std::map<int, std::vector<std::unordered_set<int>>> m_graph_matrix {};
 
     public:
-        WeightedGraph(int, int);
+        WeightedMultiGraph(int, int);
 
         const std::variant<std::map<int, std::vector<std::unordered_set<int>>>,
-                          std::map<int, std::vector<int>>>
+                           std::map<int, std::vector<int>>>
         get_graph() const {
             return m_graph_matrix;
         }
@@ -34,11 +35,11 @@ class WeightedGraph : public IGraph {
 
         std::vector<int> get_all_vertices() const;
 
+        int get_vertex_deg(int node) const;
+
         void add_vertex();
 
         void delete_vertex(int node);
-
-        int get_vertex_deg(int node) const;
 
         void add_edge(const std::tuple<int, int, int>& edge);
 
@@ -54,4 +55,4 @@ class WeightedGraph : public IGraph {
 }
 }
 
-#endif // GRAPH_REPR_WEIGHTEDGRAPH_HPP_
+#endif // GRAPH_REPR_WEIGHTEDMULTIGRAPH_HPP_

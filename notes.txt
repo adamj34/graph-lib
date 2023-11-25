@@ -1,0 +1,3 @@
+christofides:
+wagi nie ujemne
+graf spelnia warunek trojkata

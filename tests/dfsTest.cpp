@@ -13,8 +13,8 @@ TEST_CASE( "DFS finds all reachable vertices from source", "[dfs]" ) {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     std::unordered_set<int> visited = dfs_algo.get_visited();
 
     SECTION("DFS finds all reachable vertices from source") {
@@ -40,8 +40,8 @@ TEST_CASE("DFS detects cycles in the graph (1)", "[dfs]") {
     };
     graph.build_edges(edges);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
 
     SECTION("DFS detects cycles in larger graphs") {
@@ -60,8 +60,8 @@ TEST_CASE( "DFS detects cycles in the graph (2)", "[dfs]" ) {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
 
     SECTION("DFS detects cycles in the graph") {
@@ -82,8 +82,8 @@ TEST_CASE( "DFS detects cycles in the graph (3)", "[dfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
     
     SECTION("DFS detects cycles in the graph") {
@@ -102,8 +102,8 @@ TEST_CASE( "DFS detects cycles in the graph (4)", "[dfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
     
     SECTION("DFS detects cycles in the graph") {
@@ -123,8 +123,8 @@ TEST_CASE("DFS does not detect cycles in the graph if there's none (1)", "[dfs]"
     };
     graph.build_edges(edges);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
 
     SECTION("DFS correctly does not detect cycles") {
@@ -143,8 +143,8 @@ TEST_CASE( "DFS does not detect cycles in the graph if there's none (2)", "[dfs]
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     bool has_cycle = dfs_algo.contains_cycle();
     
     SECTION("DFS correctly does not detect cycles") {
@@ -156,8 +156,8 @@ TEST_CASE( "DFS handles disconnected graphs", "[dfs]" ) {
     gralph::graph::WeightedGraph graph{5, 0}; // 5 vertices, 0 edges
 
     graph.build_edges({});
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
     std::unordered_set<int> visited = dfs_algo.get_visited();
 
     SECTION("DFS finds only the source vertex in a disconnected graph") {
@@ -176,9 +176,9 @@ TEST_CASE("DFS correctly identifies a disconnected graph", "[dfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
-    bool is_disconnected = dfs_algo.is_disconnected();
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
+    bool is_disconnected = dfs_algo.is_disconnected(graph);
 
     SECTION("DFS correctly identifies a disconnected graph") {
         REQUIRE(is_disconnected == true);
@@ -195,9 +195,9 @@ TEST_CASE("DFS correctly identifies a connected graph", "[dfs]") {
     };
     graph.build_edges(coords_tuples);
 
-    gralph::search::dfs dfs_algo{graph};
-    dfs_algo.solve(0);
-    bool is_disconnected = dfs_algo.is_disconnected();
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
+    bool is_disconnected = dfs_algo.is_disconnected(graph);
 
     SECTION("DFS correctly identifies a connected graph") {
         REQUIRE(is_disconnected == false);

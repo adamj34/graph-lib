@@ -13,8 +13,8 @@ TEST_CASE("Kruskal's algorithm finds minimum spanning tree in a connected graph"
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::kruskal kruskal_algo{graph};
-    kruskal_algo.solve();
+    gralph::algos::kruskal kruskal_algo{};
+    kruskal_algo.solve(graph, 0);
     std::map<int, std::vector<int>> mst = kruskal_algo.get_mst();
     int cost = kruskal_algo.get_cost();
 
@@ -44,8 +44,8 @@ TEST_CASE("Kruskal's algorithm handles a graph with multiple connected component
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::kruskal kruskal_algo{graph};
-    kruskal_algo.solve();
+    gralph::algos::kruskal kruskal_algo{};
+    kruskal_algo.solve(graph, 0);
     std::map<int, std::vector<int>> mst = kruskal_algo.get_mst();
     int cost = kruskal_algo.get_cost();
 
@@ -72,8 +72,8 @@ TEST_CASE("Kruskal's algorithm handles a graph with multiple connected component
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::kruskal kruskal_algo{graph};
-    kruskal_algo.solve();
+    gralph::algos::kruskal kruskal_algo{};
+    kruskal_algo.solve(graph, 0);
     std::map<int, std::vector<int>> mst = kruskal_algo.get_mst();
     int cost = kruskal_algo.get_cost();
 
@@ -92,8 +92,8 @@ TEST_CASE("Kruskal's algorithm handles a graph with multiple connected component
 TEST_CASE("Kruskal's algorithm handles an empty graph", "[kruskal]") {
     gralph::graph::WeightedGraph graph{0, 0};
 
-    gralph::algos::kruskal kruskal_algo{graph};
-    kruskal_algo.solve();
+    gralph::algos::kruskal kruskal_algo{};
+    kruskal_algo.solve(graph, 0);
     std::map<int, std::vector<int>> mst = kruskal_algo.get_mst();
     int cost = kruskal_algo.get_cost();
 

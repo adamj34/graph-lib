@@ -37,8 +37,8 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path (G4G)", "[Dijks
 
     graph.build_edges(coords_tuples);
 
-    gralph::algos::dijkstra dijkstra{graph};
-    dijkstra.solve(0);
+    gralph::algos::dijkstra dijkstra{};
+    dijkstra.solve(graph, 0);
     std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_path_costs();
 
     SECTION("Shortest path to each vertex is correct") {
@@ -69,8 +69,8 @@ TEST_CASE( "Dijkstra's algorithm finds the correct shortest path", "[DijkstraTes
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::dijkstra dijkstra{graph};
-    dijkstra.solve(0);
+    gralph::algos::dijkstra dijkstra{};
+    dijkstra.solve(graph, 0);
     std::unordered_map<int, int> shortest_paths = dijkstra.get_shortest_path_costs();
 
     SECTION("Shortest path to each vertex is correct") {
@@ -97,8 +97,8 @@ TEST_CASE( "Dijkstra's algorithm reconstructs the correct shortest path", "[Dijk
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::dijkstra dijkstra{graph};
-    dijkstra.solve(0);
+    gralph::algos::dijkstra dijkstra{};
+    dijkstra.solve(graph, 0);
 
     SECTION("Shortest path from source to each vertex is correct") {
         std::vector<std::pair<int, int>> expected_path_to_1 = {{0, 1}};

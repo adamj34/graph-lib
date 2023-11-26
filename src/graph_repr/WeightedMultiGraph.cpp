@@ -93,7 +93,30 @@ std::variant<std::unordered_set<int>, int> WeightedMultiGraph::get_edge_weight(c
     return m_graph_matrix.at(edge.first)[edge.second];
 }
 
-void WeightedMultiGraph::print_matrix() {
+std::unordered_set<int> WeightedMultiGraph::check_edge_weight(const std::pair<int, int>& edge) const {
+    return m_graph_matrix.at(edge.first)[edge.second];
+}
+
+bool WeightedMultiGraph::is_eulerian() const {
+    for (const auto& [k, v] : m_graph_matrix) {
+        if (get_vertex_deg(k) % 2 != 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool WeightedMultiGraph::is_semi_eulerian() const {
+    int odd_deg_vertices = 0;
+    for (const auto& [k, v] : m_graph_matrix) {
+        if (get_vertex_deg(k) % 2 != 0) {
+            ++odd_deg_vertices;
+        }
+    }
+    return (odd_deg_vertices == 2) || (odd_deg_vertices == 0);
+}
+
+void WeightedMultiGraph::print_matrix() const {
     for (const auto& [k, v] : m_graph_matrix) {
         std::cout << k << ": ";
         for (const auto& i : v) {

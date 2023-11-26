@@ -7,15 +7,21 @@
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o -c /home/addar/graph-lib/src/algorithms/mst/prim.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/mst/prim.cpp",
-  "output": "src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o"
-},
-{
-  "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
   "file": "/home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
   "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedMultiGraph.cpp",
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedMultiGraph.cpp",
+  "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o -c /home/addar/graph-lib/src/algorithms/mst/prim.cpp",
+  "file": "/home/addar/graph-lib/src/algorithms/mst/prim.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
@@ -106,6 +112,12 @@
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/kruskalTest.cpp.o -c /home/addar/graph-lib/tests/kruskalTest.cpp",
   "file": "/home/addar/graph-lib/tests/kruskalTest.cpp",
   "output": "tests/CMakeFiles/gralphTests.dir/kruskalTest.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/WeightedMultiGraphTest.cpp.o -c /home/addar/graph-lib/tests/WeightedMultiGraphTest.cpp",
+  "file": "/home/addar/graph-lib/tests/WeightedMultiGraphTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/WeightedMultiGraphTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",

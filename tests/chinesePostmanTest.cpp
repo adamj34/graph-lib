@@ -17,8 +17,8 @@ TEST_CASE("Chinese Postman finds the optimal solution for an Eulerian graph", "[
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::fleuryCycle euler_cycle_finder{graph};
-    gralph::algos::dijkstra path_finder{graph};
+    gralph::algos::fleuryCycle euler_cycle_finder{};
+    gralph::algos::dijkstra path_finder{};
 
     gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
     cp.solve();
@@ -43,8 +43,8 @@ TEST_CASE("Chinese Postman finds the optimal solution for a semi-Eulerian graph 
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::fleuryCycle euler_cycle_finder{graph};
-    gralph::algos::dijkstra path_finder{graph};
+    gralph::algos::fleuryCycle euler_cycle_finder{};
+    gralph::algos::dijkstra path_finder{};
 
     gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
     cp.solve();
@@ -76,8 +76,8 @@ TEST_CASE("Chinese Postman finds the optimal solution for a semi-Eulerian graph 
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::fleuryCycle euler_cycle_finder{graph};
-    gralph::algos::dijkstra path_finder{graph};
+    gralph::algos::fleuryCycle euler_cycle_finder{};
+    gralph::algos::dijkstra path_finder{};
 
     gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
     cp.solve();
@@ -117,8 +117,8 @@ TEST_CASE("Chinese Postman finds the optimal solution for a graph with multiple 
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::fleuryCycle euler_cycle_finder{graph};
-    gralph::algos::dijkstra path_finder{graph};
+    gralph::algos::fleuryCycle euler_cycle_finder{};
+    gralph::algos::dijkstra path_finder{};
 
     gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
     cp.solve();
@@ -159,8 +159,8 @@ TEST_CASE("Chinese Postman finds the optimal solution for a non-eulerian and non
     };
     graph.build_edges(coords_tuples);
 
-    gralph::algos::fleuryCycle euler_cycle_finder{graph};
-    gralph::algos::dijkstra path_finder{graph};
+    gralph::algos::fleuryCycle euler_cycle_finder{};
+    gralph::algos::dijkstra path_finder{};
 
     gralph::problems::chinesePostman cp{graph, path_finder, euler_cycle_finder};
     cp.solve();

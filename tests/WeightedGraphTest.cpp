@@ -27,7 +27,7 @@ TEST_CASE( "WeightedGraph is correctly initialized", "[WeightedGraphTest]" ) {
             {4, {0, 1, 0, 0, 0}},
         };
  
-        REQUIRE(graph.get_graph() == expected_matrix);
+        REQUIRE(graph.get_graph_matrix() == expected_matrix);
     }
 }
 
@@ -49,7 +49,7 @@ TEST_CASE( "WeightedGraph can add and delete vertices", "[WeightedGraphTest]" ) 
             {2, {0, 3, 0, 0}},
             {3, {0, 0, 0, 0}},
         };
-        REQUIRE(graph.get_graph() == expected_matrix);
+        REQUIRE(graph.get_graph_matrix() == expected_matrix);
     }
 
     SECTION("Deleting a vertex decreases the number of vertices and removes the corresponding row and column from the matrix") {
@@ -60,7 +60,7 @@ TEST_CASE( "WeightedGraph can add and delete vertices", "[WeightedGraphTest]" ) 
             {0, {0, 0}},
             {2, {0, 0}},
         };
-        REQUIRE(graph.get_graph() == expected_matrix);
+        REQUIRE(graph.get_graph_matrix() == expected_matrix);
     }
 }
 
@@ -113,7 +113,7 @@ TEST_CASE("WeightedGraph delete_vertex works correctly", "[WeightedGraphTest]") 
             {4, {0, 0, 0, 0}},
         };
  
-        REQUIRE(graph.get_graph() == expected_matrix);
+        REQUIRE(graph.get_graph_matrix() == expected_matrix);
     }
 }
 

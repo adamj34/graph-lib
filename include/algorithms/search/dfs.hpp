@@ -2,6 +2,7 @@
 #define ALGORITHMS_SEARCH_DFS_HPP_
 
 #include "graph_repr/WeightedGraph.hpp"
+#include "graph_repr/WeightedMultiGraph.hpp"
 
 #include <unordered_set>
 #include <unordered_map>
@@ -12,22 +13,21 @@ namespace search {
 
 class dfs {
     private:
-        const gralph::graph::WeightedGraph& m_graph;
         std::unordered_set<int> m_visited {};
         std::stack<int> m_stack {};
         std::unordered_map<int, int> m_parent {};
         bool m_cycle { false };
 
     public:
-        explicit dfs(const gralph::graph::WeightedGraph& graph);
+        void solve(const gralph::graph::WeightedGraph&, int);
 
-        void solve(int source);
+        void solve(const gralph::graph::WeightedMultiGraph&, int);
 
         const std::unordered_set<int>& get_visited() const { return m_visited; };
 
         bool contains_cycle() { return m_cycle; };
 
-        bool is_disconnected();
+        bool is_disconnected(gralph::graph::IGraph& graph);
 };
 
 }  // namespace search

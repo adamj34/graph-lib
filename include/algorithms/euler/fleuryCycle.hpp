@@ -1,8 +1,8 @@
 #ifndef ALGORITHMS_EULER_FLEURYCYCLE_HPP_
 #define ALGORITHMS_EULER_FLEURYCYCLE_HPP_
 
-#include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/euler/IEulerCycleFinder.hpp"
+#include "graph_repr/IGraph.hpp"
 
 #include <utility>
 #include <vector>
@@ -13,32 +13,21 @@ namespace algos {
 class fleuryCycle : public IEulerCycleFinder {
     private:
         int m_source { 0 };
-        gralph::graph::WeightedGraph m_graph;
         std::vector<std::pair<int, int>> m_eulerian_cycle {};
-        bool m_is_eulerian {};
-        bool m_is_semi_eulerian {};
         int m_cost { 0 };
 
-        bool check_euler_cycle(); 
+        int find_starting_point(const gralph::graph::IGraph&);
 
-        bool check_euler_path();
-
-        int find_starting_point();
-
-        int choose_starting_point();
+        int choose_starting_point(const gralph::graph::IGraph&);
 
     public:
-        explicit fleuryCycle(const gralph::graph::WeightedGraph& graph);
+        void solve(gralph::graph::WeightedGraph&, int) override;
 
-        void solve(int source = 0) override;
+        void solve(gralph::graph::WeightedMultiGraph&, int) override;
 
-        std::vector<std::pair<int, int>> get_eulerian_cycle() override { return m_eulerian_cycle; };
+        std::vector<std::pair<int, int>> get_eulerian_cycle() const override { return m_eulerian_cycle; };
 
-        bool is_eulerian() override { return m_is_eulerian; };
-
-        bool is_semi_eulerian() override { return m_is_semi_eulerian; };
-
-        int get_cost() override { return m_cost; };
+        int get_cost() const override { return m_cost; };
 };
 
 }  // namespace algos

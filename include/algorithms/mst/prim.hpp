@@ -14,15 +14,14 @@ namespace algos {
 
 class prim : public IMst {
     private:
-        const gralph::graph::WeightedGraph& m_graph;
         std::map<int, std::vector<int>> m_mst {};
         int m_cost { 0 };
         std::unordered_set<int> m_added {};
 
     public:
-        explicit prim(const gralph::graph::WeightedGraph& graph);
+        void solve(const gralph::graph::WeightedGraph&, int) override;
 
-        void solve(int source = 0) override;
+        void solve(const gralph::graph::WeightedMultiGraph&, int) override;
 
         const std::map<int, std::vector<int>>& get_mst() const override { return m_mst; }
 

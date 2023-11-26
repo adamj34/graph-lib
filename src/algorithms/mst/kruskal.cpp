@@ -1,6 +1,7 @@
 #include "graph_repr/WeightedGraph.hpp"
 #include "algorithms/mst/kruskal.hpp"
 #include "data_structures/disjoinedSet.hpp"
+#include "graph_repr/IGraph.hpp"
 
 #include <vector>
 #include <tuple>
@@ -9,14 +10,11 @@
 namespace gralph {
 namespace algos {
 
-kruskal::kruskal(const gralph::graph::WeightedGraph& graph)
-    : m_graph(graph)
-    {}
 
-void kruskal::solve(int source) {
-    std::vector<std::tuple<int, int, int>> sorted_edges = sort_edges();
+void kruskal::solve(const gralph::graph::WeightedGraph& graph, int source = 0) {
+    std::vector<std::tuple<int, int, int>> sorted_edges = sort_edges(graph);
     
-    gralph::ds::DisjoinedSet disjoined_set(m_graph.get_vertex_num());
+    gralph::ds::DisjoinedSet disjoined_set(graph.get_vertex_num());
 
     for (const auto& edge : sorted_edges) {
         int node_1 = std::get<0>(edge);
@@ -32,9 +30,12 @@ void kruskal::solve(int source) {
     }
 }
 
+void kruskal::solve(const gralph::graph::WeightedMultiGraph& graph, int source = 0) {
+    // TODO
+}
 
-std::vector<std::tuple<int, int, int>> kruskal::sort_edges() {
-    std::vector<std::tuple<int, int, int>> edges { m_graph.get_all_edges() };
+std::vector<std::tuple<int, int, int>> kruskal::sort_edges(const gralph::graph::IGraph& graph) {
+    std::vector<std::tuple<int, int, int>> edges { graph.get_all_edges() };
 
     std::sort(edges.begin(), edges.end(), [](const auto& edge_1, const auto& edge_2) {
         return std::get<2>(edge_1) < std::get<2>(edge_2);

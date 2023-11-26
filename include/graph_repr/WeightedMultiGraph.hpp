@@ -21,35 +21,43 @@ class WeightedMultiGraph : public IGraph {
     public:
         WeightedMultiGraph(int, int);
 
-        const std::variant<std::map<int, std::vector<std::unordered_set<int>>>,
-                           std::map<int, std::vector<int>>>
-        get_graph() const {
+        const GraphMatrix get_graph() const override {
             return m_graph_matrix;
         }
 
-        int get_edge_num() const { return m_E_num; }
+        const std::map<int, std::vector<std::unordered_set<int>>>& get_graph_matrix() const {
+            return m_graph_matrix;
+        }
 
-        int get_vertex_num() const { return m_V_num; }
+        int get_edge_num() const override { return m_E_num; }
 
-        void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples);
+        int get_vertex_num() const override { return m_V_num; }
 
-        std::vector<int> get_all_vertices() const;
+        void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples) override;
 
-        int get_vertex_deg(int node) const;
+        std::vector<int> get_all_vertices() const override;
 
-        void add_vertex();
+        int get_vertex_deg(int node) const override;
 
-        void delete_vertex(int node);
+        void add_vertex() override;
 
-        void add_edge(const std::tuple<int, int, int>& edge);
+        void delete_vertex(int node) override;
 
-        void delete_edge(const std::pair<int, int>& edge);
+        void add_edge(const std::tuple<int, int, int>& edge) override;
 
-        std::vector<std::tuple<int, int, int>> get_all_edges() const;
+        void delete_edge(const std::pair<int, int>& edge) override;
 
-        std::variant<std::unordered_set<int>, int> get_edge_weight(const std::pair<int, int>& edge) const;
+        std::vector<std::tuple<int, int, int>> get_all_edges() const override;
 
-        void print_matrix();
+        std::variant<std::unordered_set<int>, int> get_edge_weight(const std::pair<int, int>& edge) const override;
+
+        std::unordered_set<int> check_edge_weight(const std::pair<int, int>& edge) const;
+
+        bool is_eulerian() const override;
+
+        bool is_semi_eulerian() const override;
+
+        void print_matrix() const override;
 };
 
 }

@@ -80,6 +80,10 @@ std::variant<std::unordered_set<int>, int> WeightedGraph::get_edge_weight(const 
     return m_graph_matrix.at(edge.first)[edge.second];
 }
 
+int WeightedGraph::check_edge_weight(const std::pair<int, int>& edge) const {
+    return m_graph_matrix.at(edge.first)[edge.second];
+}
+
 std::vector<std::tuple<int, int, int>> WeightedGraph::get_all_edges() const {
     std::vector<std::tuple<int, int, int>> edges {};
     for (const auto& [k, v] : m_graph_matrix) {
@@ -93,7 +97,26 @@ std::vector<std::tuple<int, int, int>> WeightedGraph::get_all_edges() const {
     return edges;
 }
 
-void WeightedGraph::print_matrix() {
+bool WeightedGraph::is_eulerian() const {
+    for (const auto& [k, v] : m_graph_matrix) {
+        if (get_vertex_deg(k) % 2 != 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool WeightedGraph::is_semi_eulerian() const {
+    int odd_deg_vertices { 0 };
+    for (const auto& [k, v] : m_graph_matrix) {
+        if (get_vertex_deg(k) % 2 != 0) {
+            ++odd_deg_vertices;
+        }
+    }
+    return (odd_deg_vertices == 2) || (odd_deg_vertices == 0);
+}
+
+void WeightedGraph::print_matrix() const {
     std::cout << 'X' << " ";
     for (const auto& [k, v] : m_graph_matrix) {
         std::cout << k << " ";
@@ -102,7 +125,7 @@ void WeightedGraph::print_matrix() {
     for (const auto& [k, v] : m_graph_matrix) {
         std::cout << k << " ";
         for (int j = 0; j < m_V_num; ++j) {
-            std::cout << m_graph_matrix[k][j] << " ";
+            std::cout << m_graph_matrix.at(k)[j] << " ";
         }
         std::cout << '\n';
     }

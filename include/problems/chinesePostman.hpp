@@ -17,8 +17,8 @@ namespace problems {
 class chinesePostman {
     private:
         const gralph::graph::WeightedGraph& m_graph;
-        IShortestPathFinder& m_pathFinder;
-        IEulerCycleFinder& m_eulerCycleFinder;
+        gralph::algos::IShortestPathFinder& m_pathFinder;
+        gralph::algos::IEulerCycleFinder& m_eulerCycleFinder;
         int m_cost {};
         std::vector<std::pair<int, int>> m_solution {};
 
@@ -32,8 +32,8 @@ class chinesePostman {
 
     public:
         chinesePostman(const gralph::graph::WeightedGraph& graph, 
-                       IShortestPathFinder& pathFinder,
-                       IEulerCycleFinder& eulerCycleFinder);
+                       gralph::algos::IShortestPathFinder& pathFinder,
+                       gralph::algos::IEulerCycleFinder& eulerCycleFinder);
 
         void solve();
 

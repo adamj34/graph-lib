@@ -11,18 +11,13 @@
 namespace gralph {
 namespace algos {
 
-prim::prim(const gralph::graph::WeightedGraph& graph)
-    : m_graph(graph)
-    {}
-
-
-void prim::solve(int source) {
-    int V_num { m_graph.get_vertex_num() };
+void prim::solve(const gralph::graph::WeightedGraph& graph, int source = 0) {
+    int V_num { graph.get_vertex_num() };
     for (int i = 0; i < V_num; ++i) {
         m_mst[i] = std::vector<int>();
     }
 
-    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+    const std::map<int, std::vector<int>>& graph_repr = graph.get_graph_matrix();
     m_added.insert(source);
     while (ssize(m_added) < V_num) {
         int min_val = std::numeric_limits<int>::max();
@@ -52,6 +47,10 @@ void prim::solve(int source) {
         m_added.insert(vertex_to);
         m_cost += min_val;
     }
+}
+
+void prim::solve(const gralph::graph::WeightedMultiGraph& graph, int source = 0) {
+    // TODO
 }
 
 }  // namespace algos

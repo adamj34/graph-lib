@@ -16,8 +16,8 @@ namespace gralph {
 namespace problems {
 
 chinesePostman::chinesePostman(const gralph::graph::WeightedGraph& graph,
-                               IShortestPathFinder& pathFinder,
-                               IEulerCycleFinder& eulerCycleFinder)
+                               gralph::algos::IShortestPathFinder& pathFinder,
+                               gralph::algos::IEulerCycleFinder& eulerCycleFinder)
     : m_graph(graph)
     , m_eulerCycleFinder(eulerCycleFinder)
     , m_pathFinder(pathFinder)
@@ -25,21 +25,23 @@ chinesePostman::chinesePostman(const gralph::graph::WeightedGraph& graph,
 
 
 void chinesePostman::solve() {
-    if (m_eulerCycleFinder.is_eulerian()) {
+    if (m_graph.is_eulerian()) {
         // euler cycle is the solution
-        m_eulerCycleFinder.solve();
+        gralph::graph::WeightedGraph euler_graph_copy { m_graph };
+        m_eulerCycleFinder.solve(euler_graph_copy, 0);
         m_solution = { m_eulerCycleFinder.get_eulerian_cycle() };
         m_cost = { m_eulerCycleFinder.get_cost() };
-    } else if (m_eulerCycleFinder.is_semi_eulerian()) {
+    } else if (m_graph.is_semi_eulerian()) {
         // use euler cycle finder to find the eulerian path
-        m_eulerCycleFinder.solve();
+        gralph::graph::WeightedGraph euler_graph_copy { m_graph };
+        m_eulerCycleFinder.solve(euler_graph_copy, 0);
         std::vector<std::pair<int, int>> euler_path { m_eulerCycleFinder.get_eulerian_cycle() };
         int euler_path_cost { m_eulerCycleFinder.get_cost() };
         int euler_path_startpoint { euler_path[0].first };
         int euler_path_endpoint { euler_path.back().second };
 
         // use dijkstra to find the shortest paths from the start point to the end point 
-        m_pathFinder.solve(euler_path_startpoint);
+        m_pathFinder.solve(m_graph, euler_path_startpoint);
         std::vector<std::pair<int, int>> shortest_path { m_pathFinder.get_shortest_path(euler_path_endpoint) };
         int shortest_path_cost = m_pathFinder.get_shortest_path_cost(euler_path_endpoint);
 
@@ -59,16 +61,15 @@ void chinesePostman::solve() {
             og_graph_copy.add_edge({ from_vertex, to_vertex, weight });
         }
 
-        gralph::algos::fleuryCycle euler_cycle_finder { og_graph_copy };
-        euler_cycle_finder.solve();
-        m_solution = { euler_cycle_finder.get_eulerian_cycle() };
-        m_cost = { euler_cycle_finder.get_cost() };
+        m_eulerCycleFinder.solve(og_graph_copy, 0);
+        m_solution = { m_eulerCycleFinder.get_eulerian_cycle() };
+        m_cost = { m_eulerCycleFinder.get_cost() };
     }
 }
 
 std::unordered_set<int> chinesePostman::get_odd_vertices() {    
     std::unordered_set<int> odd_vertices {};
-    for (auto &[vertex, neighbours] : m_graph.get_graph()) {
+    for (auto &[vertex, neighbours] : m_graph.get_graph_matrix()) {
         if (m_graph.get_vertex_deg(vertex) % 2 != 0) {
             odd_vertices.insert(vertex);
         }
@@ -80,7 +81,7 @@ std::vector<std::tuple<int, int, int>> chinesePostman::construct_full_graph(std:
     std::vector<std::tuple<int, int, int>> edges {};
     std::unordered_set<int> odd_vertices_copy = odd_vertices;
     for (int odd_vertex : odd_vertices_copy) {
-        m_pathFinder.solve(odd_vertex);
+        m_pathFinder.solve(m_graph, odd_vertex);
         for (int node : odd_vertices) {
             if (node != odd_vertex) {
                 edges.push_back({ odd_vertex, node, m_pathFinder.get_shortest_path_cost(node) });
@@ -128,10 +129,10 @@ std::vector<std::tuple<int, int, int>> chinesePostman::find_edges_to_add(std::ve
     std::vector<std::tuple<int, int, int>> edges_to_add {};
 
     for (auto [from_node, to_node, w] : min_matching) {
-        m_pathFinder.solve(from_node);
+        m_pathFinder.solve(m_graph, from_node);
         std::vector<std::pair<int, int>> shortest_path { m_pathFinder.get_shortest_path(to_node) };
         for (auto [from_vertex, to_vertex] : shortest_path) {
-            edges_to_add.push_back({ from_vertex, to_vertex, m_graph.get_edge_weight({from_vertex, to_vertex}) });
+            edges_to_add.push_back({ from_vertex, to_vertex, m_graph.check_edge_weight({from_vertex, to_vertex}) });
         }
     }
 

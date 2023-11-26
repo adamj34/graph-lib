@@ -6,19 +6,11 @@
 namespace gralph {
 namespace algos {
 
-dijkstra::dijkstra(const graph::WeightedGraph& graph) 
-    : m_graph(graph)
-    {}
 
-void dijkstra::solve(int source) {
+void dijkstra::solve(const gralph::graph::WeightedGraph& graph, int source = 0) {
     m_source = source;
-    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+    const std::map<int, std::vector<int>>& graph_repr = graph.get_graph_matrix();
     std::vector<int> source_vec = graph_repr.at(m_source);
-
-    // Reset the private members
-    m_D.clear();
-    m_predecessor.clear();
-    m_V_prime.clear();
 
     for (int i = 0; i < ssize(source_vec); i++) {
         int weight = source_vec[i];

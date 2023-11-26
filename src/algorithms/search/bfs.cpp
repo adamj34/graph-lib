@@ -12,7 +12,7 @@ bfs::bfs(const gralph::graph::WeightedGraph& graph)
     {}
 
 void bfs::solve(int source) {
-    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph();
+    const std::map<int, std::vector<int>>& graph_repr = m_graph.get_graph_matrix();
         m_queue.push(source);
         while (!m_queue.empty()) {
             int vertex = m_queue.front();

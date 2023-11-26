@@ -8,11 +8,16 @@
 #include <unordered_set>
 #include <variant>
 
+namespace gralph {
+namespace graph {
+
+using GraphMatrix = std::variant<std::map<int, std::vector<std::unordered_set<int>>>,
+                                 std::map<int, std::vector<int>>>;
+
 class IGraph {
 public:
     virtual ~IGraph() = default;
-    virtual const std::variant<std::map<int, std::vector<std::unordered_set<int>>>,
-                               std::map<int, std::vector<int>>> get_graph() const = 0;
+    virtual const GraphMatrix get_graph() const = 0;
     virtual int get_edge_num() const = 0;
     virtual int get_vertex_num() const = 0;
     virtual void build_edges(const std::vector<std::tuple<int, int, int>>& coords_tuples) = 0;
@@ -24,7 +29,13 @@ public:
     virtual void delete_edge(const std::pair<int, int>& edge) = 0;
     virtual std::vector<std::tuple<int, int, int>> get_all_edges() const = 0;
     virtual std::variant<std::unordered_set<int>, int> get_edge_weight(const std::pair<int, int>& edge) const = 0;
-    virtual void print_matrix() = 0;
+    virtual bool is_eulerian() const = 0;
+    virtual bool is_semi_eulerian() const = 0;
+    virtual void print_matrix() const = 0;
 };
+
+} // namespace graph
+} // namespace gralph
+
 
 #endif // _ALGORITHMS_GRAPHREPR_GRAPH_HPP_

@@ -52,8 +52,8 @@ TEST_CASE("WeightedMultiGraph adds and deletes edges correctly", "[WeightedMulti
     REQUIRE(graph.check_edge_weight({1, 2}) == std::unordered_set<int>{8});
     REQUIRE(graph.check_edge_weight({1, 4}) == std::unordered_set<int>{1});
 
-    graph.delete_edge({0, 1});
-    graph.delete_edge({0, 3});
+    graph.delete_edge({0, 1}, 2);
+    graph.delete_edge({0, 3}, 3);
     REQUIRE(graph.get_all_edges().size() == 6);
     REQUIRE(graph.check_edge_weight({0, 1}) == std::unordered_set<int>{});
     REQUIRE(graph.check_edge_weight({0, 3}) == std::unordered_set<int>{});

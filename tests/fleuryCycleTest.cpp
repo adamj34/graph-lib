@@ -238,3 +238,93 @@ TEST_CASE("Fleury's algorithm correctly handles disconnected graphs", "[fleury]"
 }
 
 
+TEST_CASE("Fleury's algorithm finds an Eulerian path in a WeightedMultiGraph", "[fleury]") {
+    gralph::graph::WeightedMultiGraph graph{7, 11};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 1},
+        {1, 2, 2},
+        {2, 0, 3},
+        {3, 4, 4},
+        {4, 5, 5},
+        {4, 1, 6},
+        {5, 3, 2},
+        {1, 2, 8},
+        {6, 4, 2},
+        {4, 3, 7},
+        {2, 3, 5}
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::algos::fleuryCycle fleury_algo{};
+    fleury_algo.solve(graph, 0);
+    std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
+
+
+    SECTION("Fleury's algorithm calculates the correct cost") {
+        REQUIRE(fleury_algo.get_cost() == 45);
+    }
+
+    SECTION("Fleury's algorithm finds an Eulerian path in a simple graph") {
+        std::vector<std::pair<int, int>> expected_path = {
+            {4, 1},
+            {1, 0},
+            {0, 2},
+            {2, 1},
+            {1, 2},
+            {2, 3},
+            {3, 4},
+            {4, 3},
+            {3, 5},
+            {5, 4},
+            {4, 6},
+        };
+        REQUIRE(eulerian_path == expected_path);
+    }
+}
+
+
+TEST_CASE("Fleury's algorithm finds an Eulerian cycle in a WeightedMultiGraph", "[fleury]") {
+    gralph::graph::WeightedMultiGraph graph{7, 12};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 1},
+        {1, 2, 2},
+        {2, 0, 3},
+        {3, 4, 4},
+        {4, 5, 5},
+        {4, 1, 6},
+        {5, 3, 2},
+        {1, 2, 8},
+        {6, 4, 2},
+        {4, 3, 7},
+        {4, 6, 1},
+        {2, 3, 5}
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::algos::fleuryCycle fleury_algo{};
+    fleury_algo.solve(graph, 4);
+    std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
+
+
+    SECTION("Fleury's algorithm calculates the correct cost") {
+        REQUIRE(fleury_algo.get_cost() == 46);
+    }
+
+    SECTION("Fleury's algorithm finds an Eulerian path in a simple graph") {
+        std::vector<std::pair<int, int>> expected_path = {
+            {4, 1},
+            {1, 0},
+            {0, 2},
+            {2, 1},
+            {1, 2},
+            {2, 3},
+            {3, 4},
+            {4, 3},
+            {3, 5},
+            {5, 4},
+            {4, 6},
+            {6, 4}
+        };
+        REQUIRE(eulerian_path == expected_path);
+    }
+}

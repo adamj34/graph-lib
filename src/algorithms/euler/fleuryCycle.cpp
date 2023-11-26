@@ -59,17 +59,18 @@ void fleuryCycle::solve(gralph::graph::WeightedMultiGraph& graph, int source = 0
         bool valid_edge_found { false };
         std::pair<int, int> edge {};
         for (int i = 0; i < graph.get_vertex_num(); i++) {
-            auto graph_matrix = std::get<std::map<int, std::vector<std::unordered_set<int>>>>(graph.get_graph());
+            const std::map<int, std::vector<std::unordered_set<int>>> graph_matrix = graph.get_graph_matrix();
             if (graph_matrix.at(curr_node)[i].size() != 0) {
                 edge.first = curr_node;
                 edge.second = i;
                 // int deleted_edge_weight = graph.get_edge_weight(edge);
-                int deleted_edge_weight = std::get<int>(graph.get_edge_weight(edge));
-                graph.delete_edge(edge);
+                std::unordered_set<int> possible_edges_weights = graph.check_edge_weight(edge);
+                int deleted_edge_weight = *possible_edges_weights.begin();
+                graph.delete_edge(edge, deleted_edge_weight);
 
-                gralph::search::dfs dfs_algo{graph};
-                dfs_algo.solve(curr_node);
-                if (!dfs_algo.is_disconnected()) {
+                gralph::search::dfs dfs_algo{};
+                dfs_algo.solve(graph, curr_node);
+                if (!dfs_algo.is_disconnected(graph)) {
                     m_eulerian_cycle.push_back(edge);
                     curr_node = i;
                     valid_edge_found = true;
@@ -82,15 +83,16 @@ void fleuryCycle::solve(gralph::graph::WeightedMultiGraph& graph, int source = 0
         }
 
         if (!valid_edge_found) {  // the graph has to be disconnnected
-            m_cost += std::get<int>(graph.get_edge_weight(edge));
-            graph.delete_edge(edge);
+            std::unordered_set<int> possible_edges_weights = graph.check_edge_weight(edge);
+            int deleted_edge_weight = *possible_edges_weights.begin();
+            m_cost += deleted_edge_weight;
+            graph.delete_edge(edge, deleted_edge_weight);
             m_eulerian_cycle.push_back(edge);
             curr_node = edge.second;
         }
     }
 
 }
-
 
 int fleuryCycle::find_starting_point(const gralph::graph::IGraph& graph) {
     return std::visit([&graph](auto&& arg) -> int {

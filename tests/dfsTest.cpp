@@ -203,3 +203,37 @@ TEST_CASE("DFS correctly identifies a connected graph", "[dfs]") {
         REQUIRE(is_disconnected == false);
     }
 }
+
+
+TEST_CASE("DFS handles a WeightedMultiGraph", "[dfs]") {
+    gralph::graph::WeightedMultiGraph graph{7, 9};
+    std::vector<std::tuple<int, int, int>> coords_tuples = {
+        {0, 1, 1},
+        {1, 2, 2},
+        {2, 0, 3},
+        {3, 4, 4},
+        {4, 5, 5},
+        {4, 1, 6},
+        {5, 3, 2},
+        {1, 2, 8},
+        {6, 4, 2}
+    };
+    graph.build_edges(coords_tuples);
+
+    gralph::search::dfs dfs_algo{};
+    dfs_algo.solve(graph, 0);
+    bool is_disconnected = dfs_algo.is_disconnected(graph);
+
+    SECTION("DFS correctly identifies a connected graph") {
+        REQUIRE(is_disconnected == false);
+    }
+
+    SECTION("DFS yields the correct visited vertices") {
+        std::unordered_set<int> expected_visited = {3, 5, 6, 4, 1, 2, 0};
+        REQUIRE(dfs_algo.get_visited() == expected_visited);
+    }
+
+    SECTION("DFS correctly identifies a cycle") {
+        REQUIRE(dfs_algo.contains_cycle() == true);
+    }
+}

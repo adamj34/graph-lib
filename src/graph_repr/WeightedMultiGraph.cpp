@@ -4,6 +4,7 @@
 #include <utility>
 #include <algorithm>
 #include <iostream>
+#include <iomanip>  
 
 namespace gralph {
 namespace graph {
@@ -69,10 +70,10 @@ void WeightedMultiGraph::add_edge(const std::tuple<int, int, int>& edge) {
     ++m_E_num;
 }
 
-void WeightedMultiGraph::delete_edge(const std::pair<int, int>& edge) {
+void WeightedMultiGraph::delete_edge(const std::pair<int, int>& edge, int weight) {
     const auto& [coord_0, coord_1] = edge;
-    m_graph_matrix[coord_0][coord_1].clear();
-    m_graph_matrix[coord_1][coord_0].clear();
+    m_graph_matrix[coord_0][coord_1].erase(weight);
+    m_graph_matrix[coord_1][coord_0].erase(weight);
     --m_E_num;
 }
 
@@ -117,19 +118,28 @@ bool WeightedMultiGraph::is_semi_eulerian() const {
 }
 
 void WeightedMultiGraph::print_matrix() const {
+    const int columnWidth = 8;
+    std::cout << std::left << std::setw(columnWidth) << 'X';
     for (const auto& [k, v] : m_graph_matrix) {
-        std::cout << k << ": ";
-        for (const auto& i : v) {
-            std::cout << '(';
-            for (const auto& j : i) {
-                std::cout << j << ' ';
+        std::cout << std::setw(columnWidth) << k;
+    }
+    std::cout << '\n';
+
+    for (const auto& [k, v] : m_graph_matrix) {
+        std::cout << std::setw(columnWidth) << k;
+        for (int j = 0; j < m_V_num; ++j) {
+            std::ostringstream oss;
+            oss << "(";
+            for (auto el : m_graph_matrix.at(k)[j]) {
+                oss << el << ",";
             }
-            std::cout << ") ";
+            oss << ")";
+            std::cout << std::setw(columnWidth) << oss.str();
         }
         std::cout << '\n';
     }
+    std::cout << '\n';
 }
-
 
 }   // namespace graph
 }   // namespace gralph

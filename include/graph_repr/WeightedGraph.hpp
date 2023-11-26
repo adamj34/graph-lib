@@ -44,7 +44,7 @@ class WeightedGraph : public IGraph {
 
         void add_edge(const std::tuple<int, int, int>& edge) override;
 
-        void delete_edge(const std::pair<int, int>& edge) override;
+        void delete_edge(const std::pair<int, int>& edge);
 
         std::vector<std::tuple<int, int, int>> get_all_edges() const override;
 

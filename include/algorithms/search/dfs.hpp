@@ -23,11 +23,11 @@ class dfs {
 
         void solve(const gralph::graph::WeightedMultiGraph&, int);
 
-        const std::unordered_set<int>& get_visited() const { return m_visited; };
+        const std::unordered_set<int>& get_visited() const { return m_visited; }
 
-        bool contains_cycle() { return m_cycle; };
+        bool contains_cycle() { return m_cycle; }
 
-        bool is_disconnected(gralph::graph::IGraph& graph);
+        bool is_disconnected(const gralph::graph::IGraph& graph);
 };
 
 }  // namespace search

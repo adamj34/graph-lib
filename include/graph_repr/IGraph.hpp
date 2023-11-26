@@ -26,7 +26,6 @@ public:
     virtual void add_vertex() = 0;
     virtual void delete_vertex(int node) = 0;
     virtual void add_edge(const std::tuple<int, int, int>& edge) = 0;
-    virtual void delete_edge(const std::pair<int, int>& edge) = 0;
     virtual std::vector<std::tuple<int, int, int>> get_all_edges() const = 0;
     virtual std::variant<std::unordered_set<int>, int> get_edge_weight(const std::pair<int, int>& edge) const = 0;
     virtual bool is_eulerian() const = 0;

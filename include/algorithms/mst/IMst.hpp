@@ -7,6 +7,9 @@
 #include <vector>
 #include <map>
 
+namespace gralph {
+namespace algos {
+
 class IMst {
 public:
     virtual ~IMst() = default;
@@ -16,5 +19,7 @@ public:
     virtual const std::map<int, std::vector<int>>& get_mst() const = 0;
 };
 
+}  // namespace algos
+}  // namespace gralph
 
 #endif // ALGORITHMS_MST_IMST_HPP_

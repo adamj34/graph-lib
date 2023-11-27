@@ -9,6 +9,8 @@
 #include "problems/chinesePostman.hpp"
 #include "algorithms/euler/fleuryCycle.hpp"
 #include "algorithms/mst/kruskal.hpp"
+#include "algorithms/mst/prim.hpp"
+#include "problems/travelingSalesman.hpp"
 
 #include <iostream>
 #include <vector>
@@ -19,31 +21,41 @@ using namespace std;
 
 int main() {
 
-gralph::graph::WeightedMultiGraph graph{7, 12};
+    gralph::graph::WeightedGraph graph{7, 21};
     std::vector<std::tuple<int, int, int>> coords_tuples = {
-        {0, 1, 1},
-        {1, 2, 2},
-        {2, 0, 3},
-        {3, 4, 4},
-        {4, 5, 5},
-        {4, 1, 6},
-        {5, 3, 2},
-        {1, 2, 8},
-        {6, 4, 2},
-        {4, 3, 7}
+        {0, 1, 2},
+        {0, 2, 1},
+        {0, 3, 3},
+        {0, 4, 1},
+        {0, 5, 8},
+        {0, 6, 2},
+        {1, 2, 1},
+        {1, 3, 2},
+        {1, 4, 2},
+        {1, 5, 5},
+        {1, 6, 1},
+        {2, 3, 1},
+        {2, 4, 2},
+        {2, 5, 1},
+        {2, 6, 2},
+        {3, 4, 1},
+        {3, 5, 2},
+        {3, 6, 1},
+        {4, 5, 1},
+        {4, 6, 2},
+        {5, 6, 1}
     };
     graph.build_edges(coords_tuples);
+    graph.print_matrix();
+    cout << graph.is_semi_eulerian() << endl;
+    gralph::algos::fleuryCycle eulerCycleFinder;
+    gralph::algos::prim mstFinder;
+    gralph::problems::travelingSalesman tsp(graph, eulerCycleFinder, mstFinder);
+    tsp.solve();
 
-    cout << graph.is_eulerian() << endl;
-
-    gralph::algos::fleuryCycle fleury_algo{};
-    fleury_algo.solve(graph, 4);
-    std::vector<std::pair<int, int>> eulerian_path = fleury_algo.get_eulerian_cycle();
-
-    std::cout << "Eulerian cycle: ";
-    for (auto &[node, val] : eulerian_path) {
-        std::cout << "(" << node << ", " << val << ") ";
+    cout << tsp.get_cost() << endl;
+    std::vector<std::pair<int, int>> solution = tsp.get_solution();
+    for (auto& [from_vertex, to_vertex] : solution) {
+        cout << from_vertex << " " << to_vertex << endl;
     }
-
-    std::cout << fleury_algo.get_cost() << std::endl;
 }

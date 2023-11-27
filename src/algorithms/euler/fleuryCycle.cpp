@@ -63,7 +63,6 @@ void fleuryCycle::solve(gralph::graph::WeightedMultiGraph& graph, int source = 0
             if (graph_matrix.at(curr_node)[i].size() != 0) {
                 edge.first = curr_node;
                 edge.second = i;
-                // int deleted_edge_weight = graph.get_edge_weight(edge);
                 std::unordered_set<int> possible_edges_weights = graph.check_edge_weight(edge);
                 int deleted_edge_weight = *possible_edges_weights.begin();
                 graph.delete_edge(edge, deleted_edge_weight);
@@ -84,6 +83,10 @@ void fleuryCycle::solve(gralph::graph::WeightedMultiGraph& graph, int source = 0
 
         if (!valid_edge_found) {  // the graph has to be disconnnected
             std::unordered_set<int> possible_edges_weights = graph.check_edge_weight(edge);
+            if (possible_edges_weights.empty()) {
+                return;
+            }
+
             int deleted_edge_weight = *possible_edges_weights.begin();
             m_cost += deleted_edge_weight;
             graph.delete_edge(edge, deleted_edge_weight);

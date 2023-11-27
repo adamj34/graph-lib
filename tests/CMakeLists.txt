@@ -17,6 +17,7 @@ add_executable(gralphTests
     chinesePostmanTest.cpp
     kruskalTest.cpp
     WeightedMultiGraphTest.cpp
+    travelingSalesmanTest.cpp
 )
 
 target_link_libraries(gralphTests

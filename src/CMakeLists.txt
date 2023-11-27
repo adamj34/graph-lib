@@ -7,8 +7,9 @@ add_library(gralph
             algorithms/search/dfs.cpp
             algorithms/search/bfs.cpp
             algorithms/euler/fleuryCycle.cpp
-            problems/chinesePostman.cpp
             algorithms/mst/kruskal.cpp
+            problems/chinesePostman.cpp
+            problems/travelingSalesman.cpp
             data_structures/disjoinedSet.cpp
 )
 

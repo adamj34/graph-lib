@@ -26,7 +26,7 @@ class travelingSalesman {
 
         std::vector<std::tuple<int, int, int>> find_min_perfect_matching(std::vector<std::tuple<int, int, int>>& edges);
 
-        std::pair<std::vector<std::pair<int, int>>, int> shortcut(const std::vector<std::pair<int, int>>& euler_tour);
+        std::vector<std::pair<int, int>> shortcut(const std::vector<std::pair<int, int>>& euler_tour);
     public:
         travelingSalesman(const gralph::graph::WeightedGraph& graph, 
                           gralph::algos::IEulerCycleFinder& eulerCycleFinder,

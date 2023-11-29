@@ -18,7 +18,6 @@ TEST_CASE("TravelingSalesman solves correctly (1)", "[TravelingSalesman]") {
         {3, 4, 1}
     };
     graph.build_edges(coords_tuples);
-    graph.print_matrix();
 
     gralph::algos::fleuryCycle eulerCycleFinder;
     gralph::algos::prim mstFinder;
@@ -46,7 +45,6 @@ TEST_CASE("TravelingSalesman solves correctly (2)", "[TravelingSalesman]") {
         {2, 3, 1},
     };
     graph.build_edges(coords_tuples);
-    graph.print_matrix();
 
     gralph::algos::fleuryCycle eulerCycleFinder;
     gralph::algos::prim mstFinder;
@@ -89,7 +87,6 @@ TEST_CASE("TravelingSalesman solves correctly (3)", "[TravelingSalesman]") {
         {5, 6, 1}
     };
     graph.build_edges(coords_tuples);
-    graph.print_matrix();
 
     gralph::algos::fleuryCycle eulerCycleFinder;
     gralph::algos::prim mstFinder;
@@ -97,7 +94,7 @@ TEST_CASE("TravelingSalesman solves correctly (3)", "[TravelingSalesman]") {
     tsp.solve();
 
     SECTION("Cost is correct") {
-        REQUIRE(tsp.get_cost() == 6);
+        REQUIRE(tsp.get_cost() == 8);
     }
 
     SECTION("Hamiltonian path is correct") {

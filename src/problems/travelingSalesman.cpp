@@ -49,9 +49,11 @@ void travelingSalesman::solve() {
     int euler_tour_cost = { m_eulerCycleFinder.get_cost() };
 
     //shortcut the euler tour
-    std::pair<std::vector<std::pair<int, int>>, int> res = shortcut(euler_tour);
-    m_solution = { res.first };
-    m_cost = { euler_tour_cost - res.second };
+    std::vector<std::pair<int, int>> res = { shortcut(euler_tour) };
+    m_solution = res;
+    for (auto& [from_vertex, to_vertex] : m_solution) {
+        m_cost += m_graph.check_edge_weight({from_vertex, to_vertex});
+    }
 
 }
 
@@ -124,26 +126,20 @@ std::vector<std::tuple<int, int, int>> travelingSalesman::find_min_perfect_match
     return min_matching;
 }
 
-std::pair<std::vector<std::pair<int, int>>, int> travelingSalesman::shortcut(const std::vector<std::pair<int, int>>& euler_tour) {
+std::vector<std::pair<int, int>> travelingSalesman::shortcut(const std::vector<std::pair<int, int>>& euler_tour) {
     std::vector<std::pair<int, int>> hamiltonian_path {};
     std::unordered_set<int> visited { euler_tour[0].first };
-    int saved_distance {};
     int last_vertex { euler_tour[0].first };
     for (auto& [from_vertex, to_vertex] : euler_tour) {
         if (!visited.contains(to_vertex)) {
             visited.insert(to_vertex);
             hamiltonian_path.push_back({last_vertex, to_vertex});
             last_vertex = to_vertex;
-        } else {
-            // don't add the last edge because it'll be added after the loop
-            if (to_vertex != euler_tour[0].first) {
-                saved_distance += m_graph.check_edge_weight({from_vertex, to_vertex});
-            }
         }
     }
 
     hamiltonian_path.push_back({last_vertex, euler_tour[0].first});
-    return {hamiltonian_path, saved_distance};
+    return hamiltonian_path;
 }
 
 }  // namespace problems

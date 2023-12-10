@@ -552,6 +552,13 @@ build src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o: CXX_COMPILE
   OBJECT_DIR = src/CMakeFiles/gralph.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gralph.dir/graph_repr
 
+build src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp || cmake_object_order_depends_target_gralph
+  DEP_FILE = src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/addar/graph-lib/include
+  OBJECT_DIR = src/CMakeFiles/gralph.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gralph.dir/graph_repr
+
 build src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o: CXX_COMPILER__gralph_unscanned_Debug /home/addar/graph-lib/src/algorithms/mst/prim.cpp || cmake_object_order_depends_target_gralph
   DEP_FILE = src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o.d
   FLAGS = -g -std=gnu++20
@@ -623,7 +630,7 @@ build src/CMakeFiles/gralph.dir/data_structures/disjoinedSet.cpp.o: CXX_COMPILER
 #############################################
 # Link the static library src/libgralph.a
 
-build src/libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o src/CMakeFiles/gralph.dir/algorithms/mst/kruskal.cpp.o src/CMakeFiles/gralph.dir/problems/chinesePostman.cpp.o src/CMakeFiles/gralph.dir/problems/travelingSalesman.cpp.o src/CMakeFiles/gralph.dir/data_structures/disjoinedSet.cpp.o
+build src/libgralph.a: CXX_STATIC_LIBRARY_LINKER__gralph_Debug src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o src/CMakeFiles/gralph.dir/algorithms/mst/kruskal.cpp.o src/CMakeFiles/gralph.dir/problems/chinesePostman.cpp.o src/CMakeFiles/gralph.dir/problems/travelingSalesman.cpp.o src/CMakeFiles/gralph.dir/data_structures/disjoinedSet.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/CMakeFiles/gralph.dir
   POST_BUILD = :

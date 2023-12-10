@@ -2,6 +2,7 @@
 add_library(gralph
             graph_repr/WeightedGraph.cpp
             graph_repr/WeightedMultiGraph.cpp
+            graph_repr/WeightedDirectedGraph.cpp
             algorithms/mst/prim.cpp
             algorithms/shortest_path/dijkstra.cpp
             algorithms/search/dfs.cpp

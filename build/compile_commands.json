@@ -19,6 +19,12 @@
 },
 {
   "directory": "/home/addar/graph-lib/build",
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp",
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp",
+  "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o"
+},
+{
+  "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o -c /home/addar/graph-lib/src/algorithms/mst/prim.cpp",
   "file": "/home/addar/graph-lib/src/algorithms/mst/prim.cpp",
   "output": "src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o"

@@ -11,6 +11,7 @@ add_library(gralph
             algorithms/mst/kruskal.cpp
             problems/chinesePostman.cpp
             problems/travelingSalesman.cpp
+            problems/CPM.cpp
             data_structures/disjoinedSet.cpp
 )
 

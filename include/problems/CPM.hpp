@@ -16,7 +16,7 @@ class CPM {
 
         std::unordered_map<int, double> assign_weigths_to_tasks();
 
-        void topo_sort();
+        std::vector<int> topo_sort();
         void topo_sort_subroutine(int curr_node, std::vector<bool>& visited, std::vector<int>& topo_order);
 
     public:

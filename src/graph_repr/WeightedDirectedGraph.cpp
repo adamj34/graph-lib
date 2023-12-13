@@ -141,7 +141,7 @@ void WeightedDirectedGraph::print_matrix() const {
     }
 }
 
-int WeightedDirectedGraph::get_vertex_indeg(int node) {
+int WeightedDirectedGraph::get_vertex_indeg(int node) const {
     int in_degree {};
     for (const auto &[v, k] : m_graph_matrix) {
         if (k[node] != 0) {

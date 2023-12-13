@@ -52,6 +52,8 @@ class WeightedDirectedGraph : public IGraph {
         bool is_semi_eulerian() const override;
 
         void print_matrix() const override;
+
+        int get_vertex_indeg(int node) const;
 };
 
 } // namespace graph

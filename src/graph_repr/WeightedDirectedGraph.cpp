@@ -141,5 +141,15 @@ void WeightedDirectedGraph::print_matrix() const {
     }
 }
 
+int WeightedDirectedGraph::get_vertex_indeg(int node) {
+    int in_degree {};
+    for (const auto &[v, k] : m_graph_matrix) {
+        if (k[node] != 0) {
+            ++in_degree;
+        }
+    }
+    return in_degree;
+}
+
 } // namespace graph
 } // namespace gralph

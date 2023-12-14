@@ -17,7 +17,8 @@ class CPM {
         std::unordered_map<int, double> assign_weigths_to_tasks();
 
         std::vector<int> topo_sort();
-        void topo_sort_subroutine(int curr_node, std::vector<bool>& visited, std::vector<int>& topo_order);
+        void topo_sort_subroutine(int curr_node, std::vector<bool>& visited,
+                                  std::vector<int>& topo_order, std::vector<bool>& in_stack);
 
     public:
         CPM(const gralph::graph::WeightedDirectedGraph& graph, const std::vector<double>& task_weights);

@@ -5,6 +5,7 @@
 #include <stdexcept>
 #include <vector>
 #include <iostream>
+#include <algorithm>  
 
 namespace gralph {
 namespace problems {
@@ -50,23 +51,32 @@ std::vector<int> CPM::topo_sort() {
     }
 
     std::vector<bool> visited(m_graph.get_all_vertices().size(), false);
+    std::vector<bool> in_stack(m_graph.get_all_vertices().size(), false);
     std::vector<int> topo_order {};
-    topo_sort_subroutine(start_vertex, visited, topo_order);
+    topo_sort_subroutine(start_vertex, visited, topo_order, in_stack);
 
+    std::reverse(topo_order.begin(), topo_order.end());
     return topo_order;
 }
 
-void CPM::topo_sort_subroutine(int curr_node, std::vector<bool>& visited, std::vector<int>& topo_order) {
+void CPM::topo_sort_subroutine(int curr_node, std::vector<bool>& visited,
+                               std::vector<int>& topo_order, std::vector<bool>& in_stack) {
     visited[curr_node] = true;
+    in_stack[curr_node] = true;
 
     std::vector<int> curr_neighbours = { m_graph.get_graph_matrix().at(curr_node) };
     for (int to_node = 0; to_node < curr_neighbours.size(); ++to_node) {
-        if (curr_neighbours[to_node] != 0 && !visited[to_node]) {
-            topo_sort_subroutine(to_node, visited, topo_order);
+        if (curr_neighbours[to_node] != 0) {
+            if (!visited[to_node]) {
+                topo_sort_subroutine(to_node, visited, topo_order, in_stack);
+            } else if (in_stack[curr_node]) {   // visited and in_stack (node still being explored) = cycle
+                throw std::runtime_error("Cycle detected.");
+            }
         }
     }
 
     topo_order.push_back(curr_node);
+    in_stack[curr_node] = false;
 }
 
 }

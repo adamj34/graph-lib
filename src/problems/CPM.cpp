@@ -7,12 +7,15 @@
 #include <iostream>
 #include <algorithm>  
 #include <limits>
+#include <queue>
+#include <fstream>
 
 namespace gralph {
 namespace problems {
 
 struct Node {
     int es {}, ef {}, ls {}, lf {};
+    int slack {};
     int weight {0};
     Node(int w) : weight(w) {}
 };
@@ -37,7 +40,7 @@ void CPM::solve() {
     }
 
     // forward pass - set es and ef
-    for (int topo_vertex : topo_order) {
+    for (const int topo_vertex : topo_order) {
         std::vector<int> neighbors = graph_matrix.at(topo_vertex);
         for (int i = 0; i < neighbors.size(); ++i) {
             if (neighbors[i] != 0 && i != topo_vertex) {
@@ -51,6 +54,73 @@ void CPM::solve() {
     }
 
     // backward_pass - set ls and lf
+    std::vector<int> reversed_topo_order(topo_order.size()); 
+    std::reverse_copy(std::begin(topo_order), std::end(topo_order), std::begin(reversed_topo_order));
+    Node& finish_node = nodes.at(reversed_topo_order[0]);
+    finish_node.lf = finish_node.ef;
+    finish_node.ls = finish_node.lf - finish_node.weight;
+    for (int topo_vertex : reversed_topo_order) {
+        for (const auto& [node, neighbors] : graph_matrix) {
+            if (neighbors[topo_vertex] != 0 && node != topo_vertex) {
+                Node& next_node = nodes.at(node);
+                if ((next_node.lf > nodes.at(topo_vertex).ls) || next_node.lf == 0) {
+                    next_node.lf = nodes.at(topo_vertex).ls;
+                }
+                next_node.ls = next_node.lf - next_node.weight;
+            }
+        }
+    }
+
+    // calculate slack
+    for (auto& [vertex, node] : nodes) {
+        if (node.ls - node.es != node.lf - node.ef) {
+            throw std::runtime_error("Slack calculation is wrong");
+        }
+        node.slack = node.ls - node.es;
+    }
+        
+    // calculate the critical path using bfs
+    std::vector<int> critical_path {};
+    std::queue<int> q {};
+    q.push(m_dummy_vertex);
+    while (!q.empty()) {
+        int curr_node = q.front();
+        q.pop();
+        const auto& neighbors = graph_matrix.at(curr_node);
+        for (int node = 0; node < neighbors.size(); ++node) {
+            if (neighbors[node] != 0 && node != curr_node) {
+                const Node& next_node = nodes.at(node);
+                if (next_node.slack == 0) {
+                    critical_path.push_back(node);
+                    q.push(node);
+                }
+            }
+        }
+    }
+    std::cout << "\nCritical path\n";
+    for (int el : critical_path) {
+        std::cout << el << ' ';
+    }
+
+    std::ofstream file("./src/problems/graph.txt");
+    for (const auto& pair : graph_matrix) {
+        int node = pair.first;
+        const std::vector<int>& neighbors = pair.second;
+        for (int i = 0; i < neighbors.size(); ++i) {
+            if (neighbors[i] != 0) {
+                file << node << " " << i << "\n";
+            }
+        }
+    }
+    file.close();
+
+    std::ofstream file2("./src/problems/nodes.txt");
+    for (const auto& pair : nodes) {
+        int key = pair.first;
+        const Node& node = pair.second;
+        file2 << key << " " << node.es << " " << node.ef << " " << node.ls << " " << node.lf << " " << node.weight << "\n";
+    }
+    file2.close();
 } 
 
 std::unordered_map<int, Node> CPM::assign_weigths_to_tasks() {

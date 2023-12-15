@@ -23,6 +23,10 @@ class WeightedDirectedGraph : public IGraph {
             return m_graph_matrix;
         }
 
+        std::map<int, std::vector<int>>& get_graph_matrix() {
+            return m_graph_matrix;
+        }
+
         int get_edge_num() const override { return m_E_num; }
 
         int get_vertex_num() const override { return m_V_num; }

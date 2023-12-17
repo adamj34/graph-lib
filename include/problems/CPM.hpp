@@ -16,6 +16,7 @@ class CPM {
         gralph::graph::WeightedDirectedGraph& m_graph;
         const std::vector<int>& m_task_weights;
         int m_dummy_vertex {};
+        std::vector<int> m_critical_path {};
 
         std::unordered_map<int, Node> assign_weigths_to_tasks();
 
@@ -31,6 +32,8 @@ class CPM {
         CPM(gralph::graph::WeightedDirectedGraph& graph, const std::vector<int>& task_weights);
 
         void solve(); 
+
+        std::vector<int> get_critical_path() const { return m_critical_path; }
 
 };
 

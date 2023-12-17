@@ -80,7 +80,7 @@ void CPM::solve() {
     }
         
     // calculate the critical path using bfs
-    std::vector<int> critical_path {};
+    std::vector<int> m_critical_path {};
     std::queue<int> q {};
     q.push(m_dummy_vertex);
     while (!q.empty()) {
@@ -91,15 +91,11 @@ void CPM::solve() {
             if (neighbors[node] != 0 && node != curr_node) {
                 const Node& next_node = nodes.at(node);
                 if (next_node.slack == 0) {
-                    critical_path.push_back(node);
+                    m_critical_path.push_back(node);
                     q.push(node);
                 }
             }
         }
-    }
-    std::cout << "\nCritical path\n";
-    for (int el : critical_path) {
-        std::cout << el << ' ';
     }
 
     std::ofstream file("./src/problems/graph.txt");

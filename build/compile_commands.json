@@ -2,656 +2,787 @@
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o CMakeFiles/main.dir/graph-lib.cpp.o -c /home/addar/graph-lib/graph-lib.cpp",
-  "file": "/home/addar/graph-lib/graph-lib.cpp"
+  "file": "/home/addar/graph-lib/graph-lib.cpp",
+  "output": "CMakeFiles/main.dir/graph-lib.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
-  "file": "/home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp"
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedGraph.cpp",
+  "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedGraph.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedMultiGraph.cpp",
-  "file": "/home/addar/graph-lib/src/graph_repr/WeightedMultiGraph.cpp"
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedMultiGraph.cpp",
+  "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedMultiGraph.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o -c /home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp",
-  "file": "/home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp"
+  "file": "/home/addar/graph-lib/src/graph_repr/WeightedDirectedGraph.cpp",
+  "output": "src/CMakeFiles/gralph.dir/graph_repr/WeightedDirectedGraph.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o -c /home/addar/graph-lib/src/algorithms/mst/prim.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/mst/prim.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/mst/prim.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/mst/prim.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o -c /home/addar/graph-lib/src/algorithms/shortest_path/dijkstra.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/shortest_path/dijkstra.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/shortest_path/dijkstra.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/shortest_path/dijkstra.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o -c /home/addar/graph-lib/src/algorithms/search/dfs.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/search/dfs.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/search/dfs.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/search/dfs.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o -c /home/addar/graph-lib/src/algorithms/search/bfs.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/search/bfs.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/search/bfs.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/search/bfs.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o -c /home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/euler/fleuryCycle.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/euler/fleuryCycle.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/algorithms/mst/kruskal.cpp.o -c /home/addar/graph-lib/src/algorithms/mst/kruskal.cpp",
-  "file": "/home/addar/graph-lib/src/algorithms/mst/kruskal.cpp"
+  "file": "/home/addar/graph-lib/src/algorithms/mst/kruskal.cpp",
+  "output": "src/CMakeFiles/gralph.dir/algorithms/mst/kruskal.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/problems/chinesePostman.cpp.o -c /home/addar/graph-lib/src/problems/chinesePostman.cpp",
-  "file": "/home/addar/graph-lib/src/problems/chinesePostman.cpp"
+  "file": "/home/addar/graph-lib/src/problems/chinesePostman.cpp",
+  "output": "src/CMakeFiles/gralph.dir/problems/chinesePostman.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/problems/travelingSalesman.cpp.o -c /home/addar/graph-lib/src/problems/travelingSalesman.cpp",
-  "file": "/home/addar/graph-lib/src/problems/travelingSalesman.cpp"
+  "file": "/home/addar/graph-lib/src/problems/travelingSalesman.cpp",
+  "output": "src/CMakeFiles/gralph.dir/problems/travelingSalesman.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/problems/CPM.cpp.o -c /home/addar/graph-lib/src/problems/CPM.cpp",
-  "file": "/home/addar/graph-lib/src/problems/CPM.cpp"
+  "file": "/home/addar/graph-lib/src/problems/CPM.cpp",
+  "output": "src/CMakeFiles/gralph.dir/problems/CPM.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/include -g -std=gnu++20 -o src/CMakeFiles/gralph.dir/data_structures/disjoinedSet.cpp.o -c /home/addar/graph-lib/src/data_structures/disjoinedSet.cpp",
-  "file": "/home/addar/graph-lib/src/data_structures/disjoinedSet.cpp"
+  "file": "/home/addar/graph-lib/src/data_structures/disjoinedSet.cpp",
+  "output": "src/CMakeFiles/gralph.dir/data_structures/disjoinedSet.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o -c /home/addar/graph-lib/tests/WeightedGraphTest.cpp",
-  "file": "/home/addar/graph-lib/tests/WeightedGraphTest.cpp"
+  "file": "/home/addar/graph-lib/tests/WeightedGraphTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/WeightedGraphTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/primTest.cpp.o -c /home/addar/graph-lib/tests/primTest.cpp",
-  "file": "/home/addar/graph-lib/tests/primTest.cpp"
+  "file": "/home/addar/graph-lib/tests/primTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/primTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/dijkstraTest.cpp.o -c /home/addar/graph-lib/tests/dijkstraTest.cpp",
-  "file": "/home/addar/graph-lib/tests/dijkstraTest.cpp"
+  "file": "/home/addar/graph-lib/tests/dijkstraTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/dijkstraTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o -c /home/addar/graph-lib/tests/dfsTest.cpp",
-  "file": "/home/addar/graph-lib/tests/dfsTest.cpp"
+  "file": "/home/addar/graph-lib/tests/dfsTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/dfsTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/bfsTest.cpp.o -c /home/addar/graph-lib/tests/bfsTest.cpp",
-  "file": "/home/addar/graph-lib/tests/bfsTest.cpp"
+  "file": "/home/addar/graph-lib/tests/bfsTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/bfsTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o -c /home/addar/graph-lib/tests/fleuryCycleTest.cpp",
-  "file": "/home/addar/graph-lib/tests/fleuryCycleTest.cpp"
+  "file": "/home/addar/graph-lib/tests/fleuryCycleTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/fleuryCycleTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/chinesePostmanTest.cpp.o -c /home/addar/graph-lib/tests/chinesePostmanTest.cpp",
-  "file": "/home/addar/graph-lib/tests/chinesePostmanTest.cpp"
+  "file": "/home/addar/graph-lib/tests/chinesePostmanTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/chinesePostmanTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/kruskalTest.cpp.o -c /home/addar/graph-lib/tests/kruskalTest.cpp",
-  "file": "/home/addar/graph-lib/tests/kruskalTest.cpp"
+  "file": "/home/addar/graph-lib/tests/kruskalTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/kruskalTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/WeightedMultiGraphTest.cpp.o -c /home/addar/graph-lib/tests/WeightedMultiGraphTest.cpp",
-  "file": "/home/addar/graph-lib/tests/WeightedMultiGraphTest.cpp"
+  "file": "/home/addar/graph-lib/tests/WeightedMultiGraphTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/WeightedMultiGraphTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
   "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -I/home/addar/graph-lib/include -g -std=gnu++20 -o tests/CMakeFiles/gralphTests.dir/travelingSalesmanTest.cpp.o -c /home/addar/graph-lib/tests/travelingSalesmanTest.cpp",
-  "file": "/home/addar/graph-lib/tests/travelingSalesmanTest.cpp"
+  "file": "/home/addar/graph-lib/tests/travelingSalesmanTest.cpp",
+  "output": "tests/CMakeFiles/gralphTests.dir/travelingSalesmanTest.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_analyse.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_analyse.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_analyse.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_analyse.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_function.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_function.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_function.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_function.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_run_for_at_least.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_run_for_at_least.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_run_for_at_least.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_run_for_at_least.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_stats.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_stats.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_stats.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_stats.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generator_exception.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generator_exception.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generator_exception.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generator_exception.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators_random.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators_random.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators_random.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/generators/catch_generators_random.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_automake.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_automake.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_automake.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_automake.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_common_base.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_common_base.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_common_base.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_common_base.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_compact.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_compact.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_compact.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_compact.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_console.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_console.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_console.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_console.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_cumulative_base.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_cumulative_base.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_cumulative_base.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_cumulative_base.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_event_listener.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_event_listener.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_event_listener.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_event_listener.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_junit.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_junit.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_junit.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_junit.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_multi.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_multi.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_multi.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_multi.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_registrars.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_registrars.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_registrars.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_registrars.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_sonarqube.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_sonarqube.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_sonarqube.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_sonarqube.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_streaming_base.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_streaming_base.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_streaming_base.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_streaming_base.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_tap.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_tap.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_tap.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_tap.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_teamcity.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_teamcity.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_teamcity.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_teamcity.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_xml.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_xml.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_xml.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_xml.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_capture.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_capture.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_capture.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_capture.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_config.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_config.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_config.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_config.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_exception.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_exception.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_exception.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_exception.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_generatortracker.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_generatortracker.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_generatortracker.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_generatortracker.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_testcase.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_testcase.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_testcase.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_testcase.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_approx.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_approx.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_approx.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_approx.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_assertion_result.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_assertion_result.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_assertion_result.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_assertion_result.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_config.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_config.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_config.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_config.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_get_random_seed.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_get_random_seed.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_get_random_seed.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_get_random_seed.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_message.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_message.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_message.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_message.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_registry_hub.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_registry_hub.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_registry_hub.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_registry_hub.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_session.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_session.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_session.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_session.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tag_alias_autoregistrar.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tag_alias_autoregistrar.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tag_alias_autoregistrar.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tag_alias_autoregistrar.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_case_info.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_case_info.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_case_info.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_case_info.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_spec.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_spec.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_spec.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_test_spec.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_timer.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_timer.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_timer.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_timer.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tostring.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tostring.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tostring.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_tostring.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_totals.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_totals.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_totals.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_totals.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_translate_exception.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_translate_exception.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_translate_exception.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_translate_exception.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_version.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_version.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_version.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/catch_version.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_assertion_handler.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_assertion_handler.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_assertion_handler.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_assertion_handler.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_case_insensitive_comparisons.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_case_insensitive_comparisons.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_case_insensitive_comparisons.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_case_insensitive_comparisons.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_clara.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_clara.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_clara.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_clara.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_commandline.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_commandline.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_commandline.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_commandline.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_console_colour.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_console_colour.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_console_colour.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_console_colour.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_context.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_context.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_context.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_context.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debug_console.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debug_console.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debug_console.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debug_console.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debugger.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debugger.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debugger.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_debugger.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_decomposer.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_decomposer.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_decomposer.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_decomposer.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enforce.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enforce.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enforce.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enforce.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enum_values_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enum_values_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enum_values_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_enum_values_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_errno_guard.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_errno_guard.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_errno_guard.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_errno_guard.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_exception_translator_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_exception_translator_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_exception_translator_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_exception_translator_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_fatal_condition_handler.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_fatal_condition_handler.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_fatal_condition_handler.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_fatal_condition_handler.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_floating_point_helpers.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_floating_point_helpers.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_floating_point_helpers.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_floating_point_helpers.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_getenv.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_getenv.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_getenv.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_getenv.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_lazy_expr.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_lazy_expr.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_lazy_expr.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_lazy_expr.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_leak_detector.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_leak_detector.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_leak_detector.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_leak_detector.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_list.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_list.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_list.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_list.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_message_info.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_message_info.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_message_info.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_message_info.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_output_redirect.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_output_redirect.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_output_redirect.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_output_redirect.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_parse_numbers.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_parse_numbers.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_parse_numbers.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_parse_numbers.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_polyfills.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_polyfills.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_polyfills.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_polyfills.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_number_generator.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_number_generator.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_number_generator.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_number_generator.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_seed_generation.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_seed_generation.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_seed_generation.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_random_seed_generation.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_spec_parser.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_spec_parser.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_spec_parser.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reporter_spec_parser.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_result_type.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_result_type.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_result_type.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_result_type.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_run_context.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_run_context.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_run_context.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_run_context.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_section.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_section.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_section.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_section.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_singletons.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_singletons.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_singletons.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_singletons.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_source_line_info.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_source_line_info.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_source_line_info.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_source_line_info.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_startup_exception_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_startup_exception_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_startup_exception_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_startup_exception_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stdstreams.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stdstreams.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stdstreams.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stdstreams.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_string_manip.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_string_manip.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_string_manip.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_string_manip.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stringref.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stringref.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stringref.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_stringref.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_tag_alias_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_tag_alias_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_tag_alias_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_tag_alias_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_info_hasher.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_info_hasher.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_info_hasher.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_info_hasher.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_registry_impl.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_registry_impl.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_registry_impl.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_registry_impl.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_tracker.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_tracker.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_tracker.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_case_tracker.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_failure_exception.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_failure_exception.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_failure_exception.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_failure_exception.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_registry.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_registry.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_registry.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_registry.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_spec_parser.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_spec_parser.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_spec_parser.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_test_spec_parser.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_textflow.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_textflow.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_textflow.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_textflow.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_uncaught_exceptions.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_uncaught_exceptions.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_uncaught_exceptions.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_uncaught_exceptions.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_wildcard_pattern.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_wildcard_pattern.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_wildcard_pattern.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_wildcard_pattern.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_xmlwriter.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_xmlwriter.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_xmlwriter.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_xmlwriter.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_container_properties.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_container_properties.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_container_properties.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_container_properties.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_exception.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_exception.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_exception.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_exception.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_floating_point.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_floating_point.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_floating_point.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_floating_point.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_predicate.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_predicate.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_predicate.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_predicate.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_quantifiers.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_quantifiers.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_quantifiers.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_quantifiers.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_string.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_string.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_string.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_string.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_templated.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_templated.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_templated.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_templated.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/internal/catch_matchers_impl.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/internal/catch_matchers_impl.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/internal/catch_matchers_impl.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/matchers/internal/catch_matchers_impl.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o"
 },
 {
   "directory": "/home/addar/graph-lib/build",
-  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -std=gnu++20 -o _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_main.cpp",
-  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_main.cpp"
+  "command": "/usr/bin/g++-13 -I/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/.. -I/home/addar/graph-lib/build/_deps/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=/home/addar/graph-lib/build/_deps/catch2-src/= -o _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o -c /home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_main.cpp",
+  "file": "/home/addar/graph-lib/build/_deps/catch2-src/src/catch2/internal/catch_main.cpp",
+  "output": "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o"
 }
 ]

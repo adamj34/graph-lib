@@ -21,12 +21,13 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
+SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/addar/graph-lib"
+ConfigureCommand: "/home/addar/.local/lib/python3.11/site-packages/cmake/data/bin/cmake" "/home/addar/graph-lib"
 MakeCommand: /home/addar/.local/lib/python3.11/site-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

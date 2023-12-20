@@ -1,4 +1,3 @@
-
 #include "problems/CPM.hpp"
 #include "graph_repr/WeightedDirectedGraph.hpp"
 
@@ -34,10 +33,6 @@ void CPM::solve() {
     const std::map<int, std::vector<int>>& graph_matrix = { m_graph.get_graph_matrix() };
     std::unordered_map<int, Node> nodes = { assign_weigths_to_tasks() };
     const std::vector<int> topo_order = { topo_sort() };
-    std::cout << "Topo order\n";
-    for(int el : topo_order) {
-        std::cout << el << ' ';
-    }
 
     // forward pass - set es and ef
     for (const int topo_vertex : topo_order) {
@@ -80,7 +75,6 @@ void CPM::solve() {
     }
         
     // calculate the critical path using bfs
-    std::vector<int> m_critical_path {};
     std::queue<int> q {};
     q.push(m_dummy_vertex);
     while (!q.empty()) {
@@ -154,7 +148,6 @@ std::vector<int> CPM::topo_sort() {
     for (const int valid_start_node : start_vertices) {
         m_graph.get_graph_matrix().at(m_dummy_vertex)[valid_start_node] = 1; 
     }
-    m_graph.print_matrix();
 
     std::vector<bool> visited(m_graph.get_all_vertices().size(), false);
     std::vector<bool> in_stack(m_graph.get_all_vertices().size(), false);

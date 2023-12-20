@@ -1,10 +1,9 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Read the graph from the file
 G = nx.read_edgelist('graph.txt', create_using=nx.DiGraph(), nodetype=int)
 
-# Read the node attributes from the file
+
 with open('nodes.txt') as f:
     for line in f:
         node, es, ef, ls, lf, weight = map(int, line.split())
@@ -14,15 +13,14 @@ with open('nodes.txt') as f:
         G.nodes[node]['lf'] = lf
         G.nodes[node]['time'] = weight
 
-# Draw the graph
 try:
-    pos = nx.planar_layout(G)  # This only works for planar graphs
+    pos = nx.planar_layout(G)  
 except nx.NetworkXException:
     pos = nx.spring_layout(G, iterations=300)  # Use a high iterations value to approximate a layout with minimal edge crossings
 
 nx.draw(G, pos, with_labels=True, arrows=True, node_color='skyblue', node_size=700, edge_color='gray')
 
-# Create a label for each node that includes all the attributes
+# Create a label
 labels = {node: f"es={data['es']},\n ef={data['ef']},\n ls={data['ls']},\n lf={data['lf']},\n t={data['time']}" for node, data in G.nodes(data=True)}
 
 # Draw the node attributes
